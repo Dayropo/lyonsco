@@ -21,13 +21,13 @@ export function Header(): ReactElement {
     <header className="sticky top-0 z-40 w-full bg-transparent">
       <div className="mx-auto flex h-14 items-center justify-between px-4 sm:h-16 sm:px-6 lg:px-8">
         <div className="flex items-center gap-2">
-          <Link href="/" className="font-sans text-base sm:text-lg font-semibold tracking-[-0.01em] text-white">
+          <Link href="/" className="font-sans text-lg sm:text-2xl font-semibold tracking-[-0.01em] text-white">
             Lyons Company
           </Link>
         </div>
         <nav className="hidden md:flex items-center gap-6">
           {navItems.map((item) => (
-            <Link key={item.href} href={item.href} className="text-sm text-white/80 hover:text-white">
+            <Link key={item.href} href={item.href} className="text-white/80 hover:text-white">
               {item.label}
             </Link>
           ))}
@@ -35,7 +35,7 @@ export function Header(): ReactElement {
         <div className="hidden md:flex items-center gap-2">
           <a
             href="mailto:info@lyonsco.com"
-            className="inline-flex items-center justify-center gap-2 rounded-md bg-primary text-primary-foreground px-4 py-2 text-sm font-semibold hover:opacity-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            className="inline-flex items-center justify-center gap-2 rounded-md bg-primary text-primary-foreground px-4 py-2 font-semibold hover:opacity-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
             <Mail size={16} />
             Quote
