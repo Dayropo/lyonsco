@@ -26,14 +26,14 @@ export interface ContactInformation {
 
 export interface ProjectDetails {
   projectName: string
-  projectStage: ProjectStage
+  projectStage: PStage
   industry: string
   timeline: Timeline
   volume: Volume
   budget?: BudgetRange
 }
 
-export type ProjectStage =
+export type PStage =
   | 'concept'
   | 'design'
   | 'prototype'

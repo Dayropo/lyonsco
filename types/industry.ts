@@ -37,13 +37,13 @@ export interface TypicalProject {
   id: string
   name: string
   description: string
-  stages: ProductionStage[]
+  stages: ProjectStage[]
   companiesInvolved: string[]
   timeline: string
   volume: string
 }
 
-export interface ProductionStage {
+export interface ProjectStage {
   name: string
   description: string
   company: string
@@ -51,7 +51,7 @@ export interface ProductionStage {
 }
 
 export type IndustrySlug =
-  | 'medical-devices'
-  | 'aerospace-defense'
-  | 'consumer-electronics'
-  | 'automotive'
+  | "medical-devices"
+  | "aerospace-defense"
+  | "consumer-electronics"
+  | "automotive"
