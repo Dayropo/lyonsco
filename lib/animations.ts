@@ -39,6 +39,7 @@ export const fadeIn = (
  */
 export const fadeInScroll = (
   element: gsap.TweenTarget,
+  trigger?: string | Element,
   options?: {
     duration?: number
     y?: number
@@ -49,6 +50,7 @@ export const fadeInScroll = (
     scrub?: boolean
   },
 ): gsap.core.Tween => {
+  const triggerTarget = trigger || (element as unknown as Element)
   return gsap.from(element, {
     opacity: 0,
     y: options?.y ?? 40,
@@ -57,7 +59,7 @@ export const fadeInScroll = (
     stagger: options?.stagger ?? 0,
     ease: 'power2.out',
     scrollTrigger: {
-      trigger: element,
+      trigger: triggerTarget as gsap.DOMTarget,
       start: options?.start ?? 'top 80%',
       end: options?.end ?? 'bottom 20%',
       scrub: options?.scrub ?? false,
@@ -133,12 +135,14 @@ export const slideIn = (
  */
 export const parallax = (
   element: gsap.TweenTarget,
+  trigger?: string | Element,
   options?: {
     speed?: number
     start?: string
     end?: string
   },
 ): gsap.core.Tween => {
+  const triggerTarget = trigger || (element as unknown as Element)
   return gsap.to(element, {
     y: (i, target) => {
       const speed = options?.speed ?? 0.5
@@ -146,7 +150,7 @@ export const parallax = (
     },
     ease: 'none',
     scrollTrigger: {
-      trigger: element,
+      trigger: triggerTarget as gsap.DOMTarget,
       start: options?.start ?? 'top bottom',
       end: options?.end ?? 'bottom top',
       scrub: true,
@@ -206,7 +210,7 @@ export const animateCounter = (
  * Timeline section animation
  */
 export const timelineAnimation = (
-  container: gsap.TweenTarget,
+  container: string | Element,
   items: gsap.TweenTarget,
 ): gsap.core.Timeline => {
   const tl = gsap.timeline({
