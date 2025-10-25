@@ -37,13 +37,13 @@ export interface TypicalProject {
   id: string
   name: string
   description: string
-  stages: ProjectStage[]
+  stages: ProductionStage[]
   companiesInvolved: string[]
   timeline: string
   volume: string
 }
 
-export interface ProjectStage {
+export interface ProductionStage {
   name: string
   description: string
   company: string
