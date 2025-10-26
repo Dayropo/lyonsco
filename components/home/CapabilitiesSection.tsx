@@ -3,7 +3,7 @@
 import type { JSX } from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { Droplet, Zap, Wrench, Layers, CircuitBoard, Lightbulb, ArrowRight } from "lucide-react"
+import { Droplet, Zap, Wrench, Layers, CircuitBoard, Lightbulb, ArrowRight, Cog, Stamp, Beaker } from "lucide-react"
 
 interface Capability {
   id: string
@@ -16,10 +16,10 @@ interface Capability {
 const capabilities: Capability[] = [
   {
     id: "injection-molding",
-    name: "Plastic Injection Molding",
+    name: "Injection Molding",
     description:
-      "High-precision plastic injection molding for complex geometries and tight tolerances. From prototypes to high-volume production runs.",
-    slug: "plastic-injection-molding",
+      "High-precision injection molding for complex geometries and tight tolerances. From prototypes to high-volume production runs.",
+    slug: "injection-molding",
     icon: <Droplet className="h-12 w-12" />,
   },
   {
@@ -28,40 +28,40 @@ const capabilities: Capability[] = [
     description:
       "Precision metal stamping and forming for automotive, aerospace, and industrial applications with consistent quality.",
     slug: "metal-stamping",
-    icon: <Zap className="h-12 w-12" />,
+    icon: <Stamp className="h-12 w-12" />,
   },
   {
-    id: "machining",
-    name: "Machining",
+    id: "cnc-machining",
+    name: "CNC Machining",
     description:
       "CNC machining services for precision components. Multi-axis capabilities for complex part geometries and tight tolerances.",
-    slug: "machining",
+    slug: "cnc-machining",
+    icon: <Cog className="h-12 w-12" />,
+  },
+  {
+    id: "screw-machining",
+    name: "Screw Machining",
+    description:
+      "Precision screw machining for automotive, aerospace, and industrial applications with consistent quality.",
+    slug: "screw-machining",
     icon: <Wrench className="h-12 w-12" />,
   },
   {
-    id: "powdered-metal",
-    name: "Powdered Metal Components",
+    id: "urethane-silicone-casting",
+    name: "Urethane & Silicone Casting",
     description:
-      "Sintered powdered metal parts with excellent dimensional accuracy and material properties for demanding applications.",
-    slug: "powdered-metal-components",
+      "Precision urethane silicone casting for automotive, aerospace, and industrial applications with consistent quality.",
+    slug: "urethane-silicone-casting",
+    icon: <Beaker className="h-12 w-12" />,
+  },
+  {
+    id: "stereolithography",
+    name: "Stereolithography (SLA)",
+    description:
+      "Precision urethane silicone casting for automotive, aerospace, and industrial applications with consistent quality.",
+    slug: "stereolithography",
     icon: <Layers className="h-12 w-12" />,
-  },
-  {
-    id: "circuit-board",
-    name: "Circuit Board Manufacturing",
-    description:
-      "PCB assembly and manufacturing with advanced testing and quality control for electronics and IoT applications.",
-    slug: "circuit-board-manufacturing",
-    icon: <CircuitBoard className="h-12 w-12" />,
-  },
-  {
-    id: "product-design",
-    name: "Product Design",
-    description:
-      "End-to-end product design services from concept to manufacturing-ready specifications with DFM optimization.",
-    slug: "product-design",
-    icon: <Lightbulb className="h-12 w-12" />,
-  },
+  }
 ]
 
 const containerVariants = {
@@ -100,7 +100,7 @@ export function CapabilitiesSection(): JSX.Element {
           priority
         />
         {/* Dark Overlay */}
-        <div className="bg-primary/87 absolute inset-0" />
+        <div className="bg-primary/70 absolute inset-0" />
       </div>
 
       {/* Content */}
@@ -114,7 +114,7 @@ export function CapabilitiesSection(): JSX.Element {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">
-              What We Can Deliver
+              Main Areas
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-[#ECF0F1]">
               Advanced manufacturing processes across multiple disciplines
@@ -140,7 +140,7 @@ export function CapabilitiesSection(): JSX.Element {
                   </div>
 
                   {/* Hover Overlay */}
-                  <div className="border border-accent bg-primary/95 absolute inset-0 flex flex-col items-center justify-center rounded-lg p-6 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  <div className="border-accent bg-primary/95 absolute inset-0 flex flex-col items-center justify-center rounded-lg border p-6 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     <p className="text-sm leading-relaxed text-white">{capability.description}</p>
                     <a
                       href={`/capabilities/${capability.slug}`}

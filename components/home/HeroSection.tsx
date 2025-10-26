@@ -66,8 +66,7 @@ export function HeroSection() {
             className="mx-auto mt-6 max-w-3xl text-lg text-slate-200 sm:text-xl md:text-2xl"
             variants={itemVariants}
           >
-            Access four specialized precision manufacturing companies through one sales team.
-            Seamless solutions from prototyping to high-volume production.
+            {SITE_DESCRIPTION}
           </motion.p>
           <motion.div
             className="mt-10 flex flex-col justify-center gap-4 sm:flex-row"

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import { Mail, Phone } from "lucide-react"
+import { Mail, Phone, ChevronDown } from "lucide-react"
 import type { ReactElement } from "react"
 import { MobileMenu } from "@/components/MobileMenu"
 import {
@@ -13,11 +13,49 @@ import {
   SITE_NAME,
 } from "@/lib/constants"
 import { Button } from "./ui/button"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 interface NavItem {
   readonly href: string
   readonly label: string
 }
+
+interface CapabilityItem {
+  readonly title: string
+  readonly href: string
+}
+
+const capabilities: readonly CapabilityItem[] = [
+  {
+    title: "Injection Molding",
+    href: "/capabilities/injection-molding",
+  },
+  {
+    title: "Metal Stamping",
+    href: "/capabilities/metal-stamping",
+  },
+  {
+    title: "CNC Machining",
+    href: "/capabilities/cnc-machining",
+  },
+  {
+    title: "Screw Machining",
+    href: "/capabilities/screw-machining",
+  },
+  {
+    title: "Urethane & Silicone Casting",
+    href: "/capabilities/urethane-silicone-casting",
+  },
+  {
+    title: "Stereolithography (SLA)",
+    href: "/capabilities/stereolithography",
+  },
+]
 
 /**
  * Site-wide header with brand, navigation, and primary CTA.
@@ -79,15 +117,39 @@ export function Header(): ReactElement {
             </a>
           </div>
           <nav className="hidden items-center lg:flex">
-            {navItems.map(item => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="border-r px-2 text-sm font-medium text-slate-200 uppercase transition-colors last:border-r-0 hover:text-white"
-              >
-                {item.label}
-              </Link>
-            ))}
+            {navItems.map(item => {
+              if (item.label === "Capabilities") {
+                return (
+                  <DropdownMenu key={item.href}>
+                    <DropdownMenuTrigger className="flex cursor-pointer items-center gap-1 border-r px-2 text-sm font-medium text-slate-200 uppercase transition-colors hover:text-white focus:outline-none">
+                      {item.label}
+                      <ChevronDown className="h-3 w-3" />
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent align="start" className="max-w-fit">
+                      {capabilities.map(capability => (
+                        <DropdownMenuItem key={capability.href} asChild className="hover:bg-secondary! hover:text-secondary-foreground!">
+                          <Link
+                            href={capability.href}
+                            className="flex flex-col items-start gap-1 p-3"
+                          >
+                            <div className="text-sm font-medium">{capability.title}</div>
+                          </Link>
+                        </DropdownMenuItem>
+                      ))}
+                    </DropdownMenuContent>
+                  </DropdownMenu>
+                )
+              }
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="border-r px-2 text-sm font-medium text-slate-200 uppercase transition-colors last:border-r-0 hover:text-white"
+                >
+                  {item.label}
+                </Link>
+              )
+            })}
           </nav>
         </div>
 

@@ -111,7 +111,7 @@ export function TimelineSection(): JSX.Element {
                   <div className="mt-4">
                     <h3 className="text-foreground text-lg font-semibold">{stage.name}</h3>
                     <p className="text-muted-foreground mt-2 text-sm">{stage.description}</p>
-                    <p className="text-secondary mt-3 text-xs font-medium">{stage.company}</p>
+                    {/* <p className="text-secondary mt-3 text-xs font-medium">{stage.company}</p> */}
                   </div>
                 </div>
                 {index < stages.length - 1 && (
