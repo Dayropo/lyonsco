@@ -20,7 +20,7 @@ export default function Home(): ReactElement {
       <TimelineSection />
       <IndustriesServedSection />
       <CapabilitiesSection />
-      <ValuePropsSection />
+      {/* <ValuePropsSection /> */}
       <CompaniesOverview />
       <CTASection />
     </main>
