@@ -13,10 +13,10 @@ export const CONTACT_PHONE = "(847) 742-7714"
 export const CONTACT_PHONE_RAW = "8477427714"
 
 export const COMPANY_ADDRESS = {
-  street: "123 Manufacturing Drive",
-  city: "Chicago",
+  street: "1970 Jamestown",
+  city: "Elgin",
   state: "IL",
-  zip: "60601",
+  zip: "60123",
   country: "USA",
 }
 
