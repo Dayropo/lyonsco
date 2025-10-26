@@ -93,7 +93,7 @@ export function CapabilitiesSection(): JSX.Element {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=2400&q=80"
+          src="/images/main-areas.webp"
           alt="Industrial metal texture"
           fill
           className="object-cover"
