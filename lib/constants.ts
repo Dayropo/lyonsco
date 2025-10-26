@@ -2,16 +2,16 @@
  * Application constants
  */
 
-export const SITE_NAME = 'Lyonsco'
+export const SITE_NAME = 'Lyons Co.'
 // export const SITE_TAGLINE = 'Your Complete Manufacturing Partner'
 // export const SITE_TAGLINE = 'Your Complete Manufacturing Partner - From Prototype to Production'
-export const SITE_TAGLINE = 'Precision manufacturing, from prototype to production.'
+export const SITE_TAGLINE = 'Precision manufacturing, from prototype to production'
 export const SITE_DESCRIPTION =
   'From Prototype to Production'
 
 export const CONTACT_EMAIL = 'info@lyonsco.com'
 export const CONTACT_PHONE = '(847) 742-7714'
-export const CONTACT_PHONE_RAW = '18477427714'
+export const CONTACT_PHONE_RAW = '8477427714'
 
 export const COMPANY_ADDRESS = {
   street: '123 Manufacturing Drive',
@@ -37,20 +37,16 @@ export const NAVIGATION_ITEMS = [
     href: '/companies',
   },
   {
-    label: 'Solutions',
-    href: '/solutions',
-  },
-  {
     label: 'Industries',
     href: '/industries',
   },
   {
-    label: 'Why Us',
-    href: '/why-us',
+    label: 'About',
+    href: '/about',
   },
   {
-    label: 'Resources',
-    href: '/resources',
+    label: 'Contact',
+    href: '/contact',
   },
 ]
 

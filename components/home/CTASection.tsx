@@ -1,44 +1,24 @@
 'use client'
 
-import { JSX, useEffect, useRef } from 'react'
+import type { JSX } from 'react'
 import Link from 'next/link'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { motion } from 'framer-motion'
 import { Mail, Phone, ArrowRight } from 'lucide-react'
 import { CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_RAW } from '@/lib/constants'
-
-if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger)
-}
 
 /**
  * Call-to-action section for RFQ and contact
  */
 export function CTASection(): JSX.Element {
-  const sectionRef = useRef<HTMLElement>(null)
-  const contentRef = useRef<HTMLDivElement>(null)
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.from(contentRef.current, {
-        opacity: 0,
-        y: 30,
-        duration: 0.8,
-        ease: 'power2.out',
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: 'top 75%',
-          toggleActions: 'play none none reverse',
-        },
-      })
-    }, sectionRef)
-    return () => ctx.revert()
-  }, [])
   return (
-    <section ref={sectionRef} className="px-6 py-20 sm:py-28">
+    <section className="px-6 py-20 sm:py-28">
       <div className="mx-auto max-w-4xl">
-        <div
-          ref={contentRef}
+        <motion.div
           className="rounded-2xl border border-border bg-gradient-to-br from-primary to-accent p-8 shadow-xl sm:p-12"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-100px' }}
+          transition={{ duration: 0.8 }}
         >
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -78,7 +58,7 @@ export function CTASection(): JSX.Element {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

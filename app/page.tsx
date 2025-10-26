@@ -1,9 +1,13 @@
-import type { ReactElement } from 'react'
-import { HeroSection } from '@/components/home/HeroSection'
-import { TimelineSection } from '@/components/home/TimelineSection'
-import { ValuePropsSection } from '@/components/home/ValuePropsSection'
-import { CompaniesOverview } from '@/components/home/CompaniesOverview'
-import { CTASection } from '@/components/home/CTASection'
+import type { ReactElement } from "react"
+import {
+  HeroSection,
+  TimelineSection,
+  ValuePropsSection,
+  CompaniesOverview,
+  CTASection,
+  IndustriesServedSection,
+  CapabilitiesSection,
+} from "@/components/home"
 
 /**
  * Homepage for Manufacturing Solutions Partner
@@ -14,6 +18,8 @@ export default function Home(): ReactElement {
     <main>
       <HeroSection />
       <TimelineSection />
+      <IndustriesServedSection />
+      <CapabilitiesSection />
       <ValuePropsSection />
       <CompaniesOverview />
       <CTASection />
