@@ -124,7 +124,7 @@ export function Footer(): JSX.Element {
               </h4>
               <div className="mt-6 space-y-4">
                 {/* Address */}
-                <div className="flex gap-3">
+                {/* <div className="flex gap-3">
                   <MapPin className="text-secondary mt-0.5 h-5 w-5 flex-shrink-0" />
                   <div>
                     <p className="text-sm text-[#ECF0F1]">
@@ -133,7 +133,7 @@ export function Footer(): JSX.Element {
                       {COMPANY_ADDRESS.city}, {COMPANY_ADDRESS.state} {COMPANY_ADDRESS.zip}
                     </p>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Phone */}
                 <div className="flex gap-3">
