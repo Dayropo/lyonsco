@@ -26,9 +26,6 @@ export function Footer(): JSX.Element {
 
   const companyLinks: readonly FooterLink[] = [
     { label: "About Us", href: "/about" },
-    { label: "Our Team", href: "/team" },
-    { label: "Careers", href: "/careers" },
-    { label: "News & Blog", href: "/blog" },
     { label: "Contact", href: "/contact" },
   ]
 

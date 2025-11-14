@@ -5,8 +5,10 @@
 export const SITE_NAME = "Lyons Co."
 // export const SITE_TAGLINE = 'Your Complete Manufacturing Partner'
 // export const SITE_TAGLINE = 'Your Complete Manufacturing Partner - From Prototype to Production'
-export const SITE_TAGLINE = "Precision manufacturing"
-export const SITE_DESCRIPTION = "From Prototype to Production"
+export const SITE_TAGLINE = "Precision Manufacturing — From Prototype to Production"
+export const SITE_DESCRIPTION = "Representing a network of trusted manufacturers specializing in injection molding, precision machining, screw machining, and metal stamping."
+export const SITE_SUBDESCRIPTION = "We support your projects from early-stage prototype through full-scale production with a focus on quality, consistency, and manufacturability."
+export const SITE_CTA_TEXT = "Let us simplify your sourcing process and help bring your designs to life — faster and more efficiently."
 
 export const CONTACT_EMAIL = "info@lyonsco.com"
 export const CONTACT_PHONE = "(847) 742-7714"

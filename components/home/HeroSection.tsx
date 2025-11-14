@@ -10,6 +10,8 @@ import {
   CONTACT_PHONE,
   CONTACT_PHONE_RAW,
   SITE_DESCRIPTION,
+  SITE_SUBDESCRIPTION,
+  SITE_CTA_TEXT,
 } from "@/lib/constants"
 
 /**
@@ -51,22 +53,33 @@ export function HeroSection() {
       </div>
       <div className="relative z-10 flex min-h-[inherit] items-center px-6 py-24 sm:py-32">
         <motion.div
-          className="mx-auto max-w-6xl text-center"
+          className="mx-auto max-w-5xl text-center"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
           <motion.h1
-            className="font-sans text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl"
+            className="font-sans text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
             variants={itemVariants}
           >
             {SITE_TAGLINE}
           </motion.h1>
-          <motion.p
-            className="mx-auto mt-6 max-w-3xl text-lg text-slate-200 sm:text-xl md:text-2xl"
+          <motion.div
+            className="mx-auto mt-8 max-w-3xl space-y-4"
             variants={itemVariants}
           >
-            {SITE_DESCRIPTION}
+            <p className="text-base text-slate-100 sm:text-lg md:text-xl">
+              {SITE_DESCRIPTION}
+            </p>
+            <p className="text-sm text-slate-200/90 sm:text-base md:text-lg">
+              {SITE_SUBDESCRIPTION}
+            </p>
+          </motion.div>
+          <motion.p
+            className="mx-auto mt-6 max-w-2xl text-sm italic text-slate-300/80 sm:text-base"
+            variants={itemVariants}
+          >
+            {SITE_CTA_TEXT}
           </motion.p>
           <motion.div
             className="mt-10 flex flex-col justify-center gap-4 sm:flex-row"

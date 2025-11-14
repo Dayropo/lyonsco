@@ -167,13 +167,13 @@ export const capabilities: Record<string, any> = {
       },
     ],
   },
-  "cnc-machining": {
-    title: "CNC Machining",
-    description: "Precision CNC machining for functional prototypes and production components",
+  "machining": {
+    title: "Machining",
+    description: "Precision machining for functional prototypes and production components",
     heroImage: "/images/capabilities/cnc-machining.webp",
     overview: {
       intro:
-        "Our CNC machining capabilities deliver functional prototypes and production components in as little as three days. Working directly from the designer's database, our craftsmen and equipment produce high-quality, accurate components to meet your most critical needs across industries from transportation to electronics.",
+        "Our machining capabilities deliver functional prototypes and production components in as little as three days. Working directly from the designer's database, our craftsmen and equipment produce high-quality, accurate components to meet your most critical needs across industries from transportation to electronics.",
       details:
         "Our 3-axis machines feature live tooling to efficiently produce parts of any complexity, with a work envelope of 45 in. x 25 in. x 20 in. We supply parts complete according to customer specifications, from material furnishing through CNC turning, milling, grinding, honing, heat treating, plating, sub-assembly, and shipping. We set up control dimensions that are 100% inspected, with all dimensions of .001 or less tolerances receiving 100% inspection.",
     },
@@ -341,5 +341,14 @@ export const capabilities: Record<string, any> = {
       },
     ],
   },
+  // "prototype-machining": {
+  //   title: "Prototype Machining",
+  //   description: "Precision machining for functional prototypes and production components",
+  //   heroImage: "/images/capabilities/prototype-machining.webp",
+  //   overview: { 
+  //     intro:
+  //       "",
+
+  // }
   // Add other capabilities here...
 }

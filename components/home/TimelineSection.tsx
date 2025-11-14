@@ -17,35 +17,38 @@ const stages: TimelineStage[] = [
   {
     id: "concept",
     name: "Concept",
-    description: "Initial ideation and feasibility studies",
+    description:
+      "Initial ideation and feasibility studies to ensure manufacturability and cost-effectiveness",
     icon: <Lightbulb className="h-8 w-8" />,
     company: "Pardev",
   },
   {
     id: "prototype",
     name: "Prototype",
-    description: "Functional prototypes and design validation",
+    description:
+      "Functional prototypes and design validation using production-intent materials and processes",
     icon: <Wrench className="h-8 w-8" />,
     company: "Pardev",
   },
   {
     id: "tooling",
     name: "Tooling",
-    description: "Production tooling and process development",
+    description:
+      "Precision production tooling and process development for repeatable, high-quality parts",
     icon: <Cog className="h-8 w-8" />,
     company: "PTI / CGR Tech",
   },
   {
     id: "production",
     name: "Production",
-    description: "Full-scale manufacturing and quality control",
+    description: "Full-scale manufacturing supported by robust quality control and traceability",
     icon: <Factory className="h-8 w-8" />,
     company: "PTI / CGR Tech",
   },
   {
     id: "precision",
     name: "Precision Components",
-    description: "Ultra-precise small parts and Swiss machining",
+    description: "Ultra-precise parts for demanding applications",
     icon: <Zap className="h-8 w-8" />,
     company: "Minic Precision",
   },
@@ -83,23 +86,32 @@ export function TimelineSection(): JSX.Element {
           className="text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-100px' }}
+          viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-foreground text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
             Complete Product Lifecycle
           </h2>
           <p className="text-muted-foreground mx-auto mt-4 max-w-2xl text-lg">
-            From initial concept to high-volume production, we guide your project through every
-            stage with seamless transitions between our specialized manufacturing partners.
+            From initial concept to production, we guide your project through every stage with
+            seamless transitions between our specialized manufacturing partners.
           </p>
         </motion.div>
+        <motion.h3
+          className="text-foreground mt-16 text-center text-2xl font-semibold sm:text-3xl"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          Our Process
+        </motion.h3>
         <motion.div
-          className="relative mt-16"
+          className="relative mt-12"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: '-100px' }}
+          viewport={{ once: true, margin: "-100px" }}
         >
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 md:gap-4">
             {stages.map((stage, index) => (

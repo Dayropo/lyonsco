@@ -8,6 +8,7 @@ export interface Company {
   name: string
   tagline: string
   description: string
+  about: string
   logo: string
   heroImage: string
   specialties: string[]

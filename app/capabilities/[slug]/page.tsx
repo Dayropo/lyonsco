@@ -51,5 +51,6 @@ export function generateStaticParams() {
     { slug: "screw-machining" },
     { slug: "urethane-silicone-casting" },
     { slug: "stereolithography" },
+    // { slug: "prototype-machining" },
   ]
 }

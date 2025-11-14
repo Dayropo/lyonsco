@@ -3,12 +3,24 @@
 import type { JSX } from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { Droplet, Zap, Wrench, Layers, CircuitBoard, Lightbulb, ArrowRight, Cog, Stamp, Beaker } from "lucide-react"
+import {
+  Droplet,
+  Zap,
+  Wrench,
+  Layers,
+  CircuitBoard,
+  Lightbulb,
+  ArrowRight,
+  Cog,
+  Stamp,
+  Beaker,
+} from "lucide-react"
 
 interface Capability {
   id: string
   name: string
   description: string
+  focus: string
   slug: string
   icon: JSX.Element
 }
@@ -18,7 +30,8 @@ const capabilities: Capability[] = [
     id: "injection-molding",
     name: "Injection Molding",
     description:
-      "High-precision injection molding for complex geometries and tight tolerances. From prototypes to high-volume production runs.",
+      "High-precision molding for complex geometries and tight tolerances. From prototypes to high-volume production runs.",
+    focus: "Rapid market entry and proof of concept.",
     slug: "injection-molding",
     icon: <Droplet className="h-12 w-12" />,
   },
@@ -26,23 +39,26 @@ const capabilities: Capability[] = [
     id: "metal-stamping",
     name: "Metal Stamping",
     description:
-      "Precision metal stamping and forming for automotive, aerospace, and industrial applications with consistent quality.",
+      "Precision stamping and forming for automotive, aerospace, and industrial applications with consistent quality.",
+    focus: "Low-volume, high-mix production.",
     slug: "metal-stamping",
     icon: <Stamp className="h-12 w-12" />,
   },
   {
-    id: "cnc-machining",
-    name: "CNC Machining",
+    id: "machining",
+    name: "Machining",
     description:
-      "CNC machining services for precision components. Multi-axis capabilities for complex part geometries and tight tolerances.",
-    slug: "cnc-machining",
+      "Turning, milling, grinding, and multi-axis CNC machining for precision components with complex geometries and tight tolerances.",
+    focus: "Complex parts and challenging materials.",
+    slug: "machining",
     icon: <Cog className="h-12 w-12" />,
   },
   {
     id: "screw-machining",
     name: "Screw Machining",
     description:
-      "Precision screw machining for automotive, aerospace, and industrial applications with consistent quality.",
+      "Precision screw machining for demanding applications in automotive, electronics, and industrial sectors.",
+    focus: "High-volume applications.",
     slug: "screw-machining",
     icon: <Wrench className="h-12 w-12" />,
   },
@@ -50,18 +66,27 @@ const capabilities: Capability[] = [
     id: "urethane-silicone-casting",
     name: "Urethane & Silicone Casting",
     description:
-      "Precision urethane silicone casting for automotive, aerospace, and industrial applications with consistent quality.",
+      "High-precision casting for low-volume production, prototypes, and specialized applications.",
+    focus: "Rapid market entry and proof of concept.",
     slug: "urethane-silicone-casting",
     icon: <Beaker className="h-12 w-12" />,
   },
   {
     id: "stereolithography",
     name: "Stereolithography (SLA)",
-    description:
-      "Precision urethane silicone casting for automotive, aerospace, and industrial applications with consistent quality.",
+    description: "Rapid prototyping and functional parts with excellent detail and surface finish.",
+    focus: "Rapid market entry and proof of concept.",
     slug: "stereolithography",
     icon: <Layers className="h-12 w-12" />,
-  }
+  },
+  {
+    id: "prototype-machining",
+    name: "Prototype Machining",
+    description: "Low-volume, proof-of-concept, and early-stage production support.",
+    focus: "Rapid market entry and proof of concept.",
+    slug: "prototype-machining",
+    icon: <Lightbulb className="h-12 w-12" />,
+  },
 ]
 
 const containerVariants = {
@@ -114,7 +139,7 @@ export function CapabilitiesSection(): JSX.Element {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">
-              Main Areas
+              Main Areas of Expertise
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-[#ECF0F1]">
               Advanced manufacturing processes across multiple disciplines
@@ -129,7 +154,11 @@ export function CapabilitiesSection(): JSX.Element {
             viewport={{ once: true, margin: "-100px" }}
           >
             {capabilities.map(capability => (
-              <motion.div key={capability.id} variants={cardVariants}>
+              <motion.div
+                key={capability.id}
+                variants={cardVariants}
+                className="[&:last-child:nth-child(3n+1)]:col-start-2"
+              >
                 <div className="group relative h-full">
                   {/* Default State - White Card */}
                   <div className="flex h-full flex-col items-center rounded-lg border border-[#E5E7E9] bg-white p-6 text-center shadow-md transition-all duration-300 hover:border-[#F1C40F] hover:shadow-xl hover:shadow-yellow-500/20">
@@ -142,6 +171,9 @@ export function CapabilitiesSection(): JSX.Element {
                   {/* Hover Overlay */}
                   <div className="border-accent bg-primary/95 absolute inset-0 flex flex-col items-center justify-center rounded-lg border p-6 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     <p className="text-sm leading-relaxed text-white">{capability.description}</p>
+                    <p className="mt-3 text-xs font-medium text-[#F1C40F] italic">
+                      Focus: {capability.focus}
+                    </p>
                     <a
                       href={`/capabilities/${capability.slug}`}
                       className="text-secondary hover:text-secondary/90 mt-4 inline-flex items-center gap-1 text-sm font-semibold transition-colors"
