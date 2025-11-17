@@ -82,7 +82,7 @@ export function Header(): ReactElement {
           : "bg-primary/20 border-transparent backdrop-blur-sm"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between py-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between py-4 px-6 lg:px-8">
         <div className="flex items-center gap-2">
           <Link
             href="/"

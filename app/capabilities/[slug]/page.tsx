@@ -1,4 +1,3 @@
-import type { JSX } from "react"
 import { notFound } from "next/navigation"
 import {
   CapabilityHero,
@@ -10,17 +9,11 @@ import {
 } from "@/components/capabilities"
 import { capabilities } from "@/data/capabilities"
 
-interface CapabilityPageProps {
-  params: {
-    slug: string
-  }
-}
-
 /**
  * Dynamic capability page
  */
-export default function CapabilityPage({ params }: CapabilityPageProps): JSX.Element {
-  const { slug } = params
+export default async function CapabilityPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
   const capability = capabilities[slug]
 
   if (!capability) {

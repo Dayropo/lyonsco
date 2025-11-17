@@ -1,4 +1,3 @@
-import type { JSX } from "react"
 import { notFound } from "next/navigation"
 import {
   CompanyHero,
@@ -11,18 +10,12 @@ import {
 } from "@/components/companies"
 import { companies } from "@/data/companies"
 
-interface CompanyPageProps {
-  params: {
-    slug: string
-  }
-}
-
 /**
  * Dynamic company page
  */
-export default function CompanyPage({ params }: CompanyPageProps): JSX.Element {
-  const { slug } = params
-  const company = companies.find((c) => c.slug === slug)
+export default async function CompanyPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const company = companies.find(c => c.slug === slug)
 
   if (!company) {
     notFound()
@@ -37,7 +30,11 @@ export default function CompanyPage({ params }: CompanyPageProps): JSX.Element {
         heroImage={company.heroImage}
         logo={company.logo}
       />
-      <CompanyAbout about={company.about} established={company.established} location={company.location} />
+      <CompanyAbout
+        about={company.about}
+        established={company.established}
+        location={company.location}
+      />
       <CompanySpecialties specialties={company.specialties} />
       <CompanyCertifications certifications={company.certifications} />
       <CompanyEquipment equipment={company.equipment} />
@@ -48,7 +45,7 @@ export default function CompanyPage({ params }: CompanyPageProps): JSX.Element {
 }
 
 export function generateStaticParams() {
-  return companies.map((company) => ({
+  return companies.map(company => ({
     slug: company.slug,
   }))
 }

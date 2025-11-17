@@ -2,6 +2,7 @@
 
 import type { JSX } from "react"
 import Image from "next/image"
+import Link from "next/link"
 import { motion } from "framer-motion"
 import {
   Droplet,
@@ -157,7 +158,7 @@ export function CapabilitiesSection(): JSX.Element {
               <motion.div
                 key={capability.id}
                 variants={cardVariants}
-                className="[&:last-child:nth-child(3n+1)]:col-start-2"
+                className="sm:[&:last-child:nth-child(3n+1)]:col-start-2"
               >
                 <div className="group relative h-full">
                   {/* Default State - White Card */}
@@ -168,20 +169,27 @@ export function CapabilitiesSection(): JSX.Element {
                     <h3 className="text-primary mt-4 text-sm font-semibold">{capability.name}</h3>
                   </div>
 
-                  {/* Hover Overlay */}
-                  <div className="border-accent bg-primary/95 absolute inset-0 flex flex-col items-center justify-center rounded-lg border p-6 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    <p className="text-sm leading-relaxed text-white">{capability.description}</p>
-                    <p className="mt-3 text-xs font-medium text-[#F1C40F] italic">
+                  {/* Hover Overlay - Hidden on mobile, shown on hover for desktop */}
+                  <Link
+                    href={`/capabilities/${capability.slug}`}
+                    className="border-accent bg-primary/95 absolute inset-0 hidden flex-col items-center justify-center rounded-lg border p-6 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 sm:flex"
+                  >
+                    <p className="text-sm leading-relaxed text-white line-clamp-4 lg:line-clamp-none">{capability.description}</p>
+                    <p className="mt-3 text-xs font-medium text-[#F1C40F] italic hidden lg:block">
                       Focus: {capability.focus}
                     </p>
-                    <a
-                      href={`/capabilities/${capability.slug}`}
-                      className="text-secondary hover:text-secondary/90 mt-4 inline-flex items-center gap-1 text-sm font-semibold transition-colors"
-                    >
+                    <span className="text-secondary hover:text-secondary/90 mt-4 inline-flex items-center gap-1 text-sm font-semibold transition-colors">
                       Learn More
                       <ArrowRight className="h-4 w-4" />
-                    </a>
-                  </div>
+                    </span>
+                  </Link>
+
+                  {/* Mobile: Make entire card clickable */}
+                  <Link
+                    href={`/capabilities/${capability.slug}`}
+                    className="absolute inset-0 sm:hidden"
+                    aria-label={`Learn more about ${capability.name}`}
+                  />
                 </div>
               </motion.div>
             ))}
