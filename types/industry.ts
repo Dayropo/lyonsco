@@ -8,12 +8,12 @@ export interface Industry {
   name: string
   description: string
   heroImage: string
-  whatWeOffer: Capability[]
+  whatWeOffer: WhatWeOffer[]
   processes: Process[]
   applications: Application[]
 }
 
-export interface Capability {
+export interface WhatWeOffer {
   id: string
   name: string
   description: string

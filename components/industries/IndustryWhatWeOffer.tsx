@@ -3,10 +3,10 @@
 import type { JSX } from "react"
 import { motion } from "framer-motion"
 import { CheckCircle } from "lucide-react"
-import type { Capability } from "@/types/industry"
+import type { WhatWeOffer } from "@/types/industry"
 
 interface IndustryWhatWeOfferProps {
-  whatWeOffer: Capability[]
+  whatWeOffer: WhatWeOffer[]
 }
 
 const containerVariants = {
