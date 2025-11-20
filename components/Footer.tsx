@@ -30,10 +30,12 @@ export function Footer(): JSX.Element {
   ]
 
   const solutionsLinks: readonly FooterLink[] = [
-    { label: "Plastic Injection Molding", href: "/capabilities/plastic-injection-molding" },
+    { label: "Injection Molding", href: "/capabilities/injection-molding" },
     { label: "Metal Stamping", href: "/capabilities/metal-stamping" },
-    { label: "Machining", href: "/capabilities/machining" },
-    { label: "Industries", href: "/industries" },
+    { label: "CNC Machining", href: "/capabilities/cnc-machining" },
+    { label: "Screw Machining", href: "/capabilities/screw-machining" },
+    { label: "Urethane/Silicone Casting", href: "/capabilities/urethane-silicone-casting" },
+    { label: "Stereolithography", href: "/capabilities/stereolithography" },
   ]
 
   return (

@@ -20,14 +20,8 @@ export function CapabilityHero({ title, description, image }: CapabilityHeroProp
     <section className="relative -mt-[68px] min-h-[60vh] overflow-hidden pt-[68px] sm:-mt-[100px] sm:pt-[100px]">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src={image}
-          alt={title}
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/75 to-primary/45" />
+        <Image src={image} alt={title} fill className="object-cover" priority />
+        <div className="from-primary/90 via-primary/75 to-primary/45 absolute inset-0 bg-gradient-to-r" />
       </div>
 
       {/* Content */}
@@ -41,13 +35,11 @@ export function CapabilityHero({ title, description, image }: CapabilityHeroProp
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
             {title}
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-200 sm:text-xl">
-            {description}
-          </p>
+          <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-200 sm:text-xl">{description}</p>
           <div className="mt-10">
             <Link
               href="/rfq"
-              className="inline-flex items-center gap-2 rounded-lg bg-secondary px-8 py-4 text-base font-semibold text-secondary-foreground shadow-lg transition-all hover:bg-secondary/90 hover:shadow-xl"
+              className="bg-secondary text-secondary-foreground hover:bg-secondary/90 inline-flex items-center gap-2 rounded-lg px-8 py-4 text-base font-semibold shadow-lg transition-all hover:shadow-xl"
             >
               <Mail size={20} />
               Request a Quote

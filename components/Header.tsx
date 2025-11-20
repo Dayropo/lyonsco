@@ -30,6 +30,11 @@ interface CapabilityItem {
   readonly href: string
 }
 
+interface IndustryItem {
+  readonly title: string
+  readonly href: string
+}
+
 const capabilities: readonly CapabilityItem[] = [
   {
     title: "Injection Molding",
@@ -54,6 +59,29 @@ const capabilities: readonly CapabilityItem[] = [
   {
     title: "Stereolithography (SLA)",
     href: "/capabilities/stereolithography",
+  },
+]
+
+const industries: readonly IndustryItem[] = [
+  {
+    title: "Automotive",
+    href: "/industries/automotive",
+  },
+  {
+    title: "Aviation",
+    href: "/industries/aviation",
+  },
+  {
+    title: "Electronics",
+    href: "/industries/electronics",
+  },
+  {
+    title: "Medical",
+    href: "/industries/medical",
+  },
+  {
+    title: "Military",
+    href: "/industries/military",
   },
 ]
 
@@ -82,7 +110,7 @@ export function Header(): ReactElement {
           : "bg-primary/20 border-transparent backdrop-blur-sm"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between py-4 px-6 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <div className="flex items-center gap-2">
           <Link
             href="/"
@@ -116,18 +144,22 @@ export function Header(): ReactElement {
               {CONTACT_PHONE}
             </a>
           </div>
-          <nav className="hidden items-center lg:flex">
+          <nav className="hidden items-center lg:flex" suppressHydrationWarning>
             {navItems.map(item => {
               if (item.label === "Capabilities") {
                 return (
-                  <DropdownMenu key={item.href}>
+                  <DropdownMenu key={item.label}>
                     <DropdownMenuTrigger className="flex cursor-pointer items-center gap-1 border-r px-2 text-sm font-medium text-slate-200 uppercase transition-colors hover:text-white focus:outline-none">
                       {item.label}
                       <ChevronDown className="h-3 w-3" />
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="start" className="max-w-fit">
                       {capabilities.map(capability => (
-                        <DropdownMenuItem key={capability.href} asChild className="hover:bg-secondary! hover:text-secondary-foreground!">
+                        <DropdownMenuItem
+                          key={capability.href}
+                          asChild
+                          className="hover:bg-secondary! hover:text-secondary-foreground!"
+                        >
                           <Link
                             href={capability.href}
                             className="flex flex-col items-start gap-1 p-3"
@@ -140,9 +172,35 @@ export function Header(): ReactElement {
                   </DropdownMenu>
                 )
               }
+              if (item.label === "Industries") {
+                return (
+                  <DropdownMenu key={item.label}>
+                    <DropdownMenuTrigger className="flex cursor-pointer items-center gap-1 border-r px-2 text-sm font-medium text-slate-200 uppercase transition-colors hover:text-white focus:outline-none">
+                      {item.label}
+                      <ChevronDown className="h-3 w-3" />
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent align="start" className="max-w-fit">
+                      {industries.map(industry => (
+                        <DropdownMenuItem
+                          key={industry.href}
+                          asChild
+                          className="hover:bg-secondary! hover:text-secondary-foreground!"
+                        >
+                          <Link
+                            href={industry.href}
+                            className="flex flex-col items-start gap-1 p-3"
+                          >
+                            <div className="text-sm font-medium">{industry.title}</div>
+                          </Link>
+                        </DropdownMenuItem>
+                      ))}
+                    </DropdownMenuContent>
+                  </DropdownMenu>
+                )
+              }
               return (
                 <Link
-                  key={item.href}
+                  key={item.label}
                   href={item.href}
                   className="border-r px-2 text-sm font-medium text-slate-200 uppercase transition-colors last:border-r-0 hover:text-white"
                 >

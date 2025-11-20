@@ -2,436 +2,373 @@
  * Industry data and solutions
  */
 
-import type { Industry } from '@/types'
+import type { Industry } from "@/types"
 
 export const industries: Industry[] = [
   {
-    id: 'medical-devices',
-    slug: 'medical-devices',
-    name: 'Medical Devices',
+    id: "automotive",
+    slug: "automotive",
+    name: "Automotive",
     description:
-      'Precision manufacturing for medical devices requires the highest standards of quality, compliance, and traceability. Our combined capabilities cover the entire product lifecycle from prototype to production.',
-    icon: 'heart-pulse',
-    heroImage: 'https://images.unsplash.com/photo-1581093458791-9d42e1c5e2e4?auto=format&fit=crop&w=2400&q=80',
-    challenges: [
+      "We produce high-precision plastic components for automotive manufacturers using advanced injection molding technology. Our process delivers consistent accuracy, durability and efficiency across small and large production runs.",
+    // heroImage:
+    //   "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=2400&q=80",
+    heroImage: "/images/industries/automotive.jpg",
+    whatWeOffer: [
       {
-        id: 'regulatory-compliance',
-        title: 'Regulatory Compliance',
-        description:
-          'Meeting FDA, ISO 13485, and other regulatory requirements throughout the manufacturing process.',
+        id: "automotive-custom-design",
+        name: "Custom Part Design",
+        description: "Functional, production-ready component designs.",
       },
       {
-        id: 'biocompatibility',
-        title: 'Biocompatibility',
-        description:
-          'Ensuring materials and processes meet biocompatibility standards for patient safety.',
+        id: "automotive-prototyping",
+        name: "Prototyping",
+        description: "Fast, cost-effective samples for early validation.",
       },
       {
-        id: 'traceability',
-        title: 'Traceability',
-        description:
-          'Maintaining complete traceability from raw materials through final inspection.',
+        id: "automotive-multi-component",
+        name: "Multi-Component & Overmolding",
+        description: "Combine materials or colours to create stronger, more versatile parts.",
       },
       {
-        id: 'sterilization',
-        title: 'Sterilization Compatibility',
-        description:
-          'Designing and manufacturing parts that can withstand various sterilization methods.',
+        id: "automotive-high-volume",
+        name: "High-Volume Production",
+        description: "Reliable, repeatable manufacturing with tight tolerances.",
       },
     ],
-    solutions: [
+    processes: [
       {
-        id: 'cleanroom-manufacturing',
-        title: 'Cleanroom Manufacturing',
-        description:
-          'ISO Class 7 cleanroom facilities for contamination-free production of critical components.',
-        capabilities: ['cleanroom-manufacturing', 'cnc-machining', 'assembly'],
-        companies: ['cgr-tech'],
+        id: "automotive-consultation",
+        name: "Consultation & Design",
+        description: "Finalize part geometry and material choices.",
       },
       {
-        id: 'medical-prototyping',
-        title: 'Rapid Medical Prototyping',
-        description:
-          'Fast iteration on medical device designs with biocompatible materials and processes.',
-        capabilities: ['additive-manufacturing', 'cnc-prototyping'],
-        companies: ['pardev'],
+        id: "automotive-tooling",
+        name: "Tooling",
+        description: "Build precision molds for accurate, repeatable output.",
       },
       {
-        id: 'high-volume-medical',
-        title: 'High-Volume Medical Components',
-        description:
-          'Scalable production of medical-grade plastic and metal components with full traceability.',
-        capabilities: ['injection-molding', 'swiss-machining'],
-        companies: ['pti', 'minic-precision'],
+        id: "automotive-material",
+        name: "Material Selection",
+        description: "Automotive-grade plastics that meet industry requirements.",
+      },
+      {
+        id: "automotive-molding",
+        name: "Molding",
+        description: "Advanced equipment ensures stable, high-quality production.",
+      },
+      {
+        id: "automotive-finishing",
+        name: "Finishing",
+        description: "Trimming, assembly and surface treatments.",
+      },
+      {
+        id: "automotive-quality",
+        name: "Quality Checks",
+        description: "Full inspections to meet ISO 9001 and IATF 16949 standards.",
+      },
+      {
+        id: "automotive-delivery",
+        name: "Delivery",
+        description: "Secure, on-time logistics.",
       },
     ],
-    capabilities: [
-      'cleanroom-manufacturing',
-      'cnc-machining',
-      'swiss-machining',
-      'injection-molding',
-      'additive-manufacturing',
-    ],
-    companies: ['pardev', 'pti', 'cgr-tech', 'minic-precision'],
-    caseStudies: [],
-    certifications: ['iso-13485', 'fda-registered', 'cleanroom'],
-    standards: ['ISO 13485', 'FDA 21 CFR Part 820', 'ISO 10993', 'ISO 14971'],
-    typicalProjects: [
+    applications: [
       {
-        id: 'surgical-instrument',
-        name: 'Surgical Instrument Development',
-        description:
-          'Complete development of a new surgical instrument from concept through FDA clearance.',
-        stages: [
-          {
-            name: 'Concept & Prototyping',
-            description: 'Initial design validation and functional prototypes',
-            company: 'pardev',
-            duration: '4-6 weeks',
-          },
-          {
-            name: 'Design Refinement',
-            description: 'Precision machining of refined prototypes for testing',
-            company: 'cgr-tech',
-            duration: '3-4 weeks',
-          },
-          {
-            name: 'Pilot Production',
-            description: 'Small-batch production for clinical trials',
-            company: 'cgr-tech',
-            duration: '6-8 weeks',
-          },
-          {
-            name: 'Full Production',
-            description: 'Scaled manufacturing with full traceability',
-            company: 'cgr-tech',
-            duration: 'Ongoing',
-          },
-        ],
-        companiesInvolved: ['pardev', 'cgr-tech'],
-        timeline: '4-6 months',
-        volume: '500-5,000 units/year',
+        id: "automotive-interior",
+        name: "Interior panels and consoles",
+        description: "Interior panels and consoles",
+      },
+      {
+        id: "automotive-exterior",
+        name: "Exterior trims, grilles and bumpers",
+        description: "Exterior trims, grilles and bumpers",
+      },
+      {
+        id: "automotive-underhood",
+        name: "Under-the-hood housings and brackets",
+        description: "Under-the-hood housings and brackets",
+      },
+      {
+        id: "automotive-electrical",
+        name: "Electrical connectors and sensor casings",
+        description: "Electrical connectors and sensor casings",
       },
     ],
   },
   {
-    id: 'aerospace-defense',
-    slug: 'aerospace-defense',
-    name: 'Aerospace & Defense',
+    id: "aviation",
+    slug: "aviation",
+    name: "Aviation",
     description:
-      'Mission-critical components for aerospace and defense applications demand exceptional precision, material traceability, and compliance with stringent industry standards.',
-    icon: 'plane',
-    heroImage: 'https://images.unsplash.com/photo-1540962351504-03099e0a754b?auto=format&fit=crop&w=2400&q=80',
-    challenges: [
+      "Injection molding has become a key manufacturing method in aviation, offering a reliable way to create lightweight, complex and durable components in high volumes. Modern high-performance plastics and composites make it possible to replace heavier metal parts while still meeting strict safety, heat-resistance and performance standards.",
+    // heroImage:
+    //   "https://images.unsplash.com/photo-1540962351504-03099e0a754b?auto=format&fit=crop&w=2400&q=80",
+    heroImage: "/images/industries/aviation.jpg",
+    whatWeOffer: [],
+    processes: [],
+    applications: [
       {
-        id: 'itar-compliance',
-        title: 'ITAR Compliance',
+        id: "aviation-interior",
+        name: "Interior Components",
         description:
-          'Maintaining compliance with International Traffic in Arms Regulations for defense-related manufacturing.',
+          "Lightweight parts for overhead panels, armrests, seat elements, cockpit knobs and instrument surrounds. Designed for precision, durability and flame resistance.",
       },
       {
-        id: 'material-certification',
-        title: 'Material Certification',
+        id: "aviation-brackets",
+        name: "Brackets and Mounts",
         description:
-          'Ensuring materials meet aerospace specifications with full certification and traceability.',
+          "Strong, low-weight supports for electrical, hydraulic and mechanical systems. Built to handle vibration, stress and high temperatures.",
       },
       {
-        id: 'tight-tolerances',
-        title: 'Extreme Tolerances',
+        id: "aviation-cable",
+        name: "Cable Clamps and Fasteners",
         description:
-          'Achieving and maintaining tolerances as tight as ±0.0001" for critical components.',
+          "Accurate, robust clips, connectors and clamps used for routing wires and tubes. Helps reduce overall aircraft weight while maintaining reliability.",
       },
       {
-        id: 'exotic-materials',
-        title: 'Exotic Materials',
+        id: "aviation-electronic",
+        name: "Electronic Housings",
         description:
-          'Working with titanium, Inconel, and other high-performance alloys.',
-      },
-    ],
-    solutions: [
-      {
-        id: 'precision-machining',
-        title: 'Precision Aerospace Machining',
-        description:
-          '5-axis CNC machining and EDM for complex aerospace components with extreme tolerances.',
-        capabilities: ['cnc-machining', 'multi-axis-machining', 'edm'],
-        companies: ['cgr-tech'],
+          "Protective casings for sensors, control units and navigation electronics. Engineered for insulation, environmental protection and electromagnetic resistance.",
       },
       {
-        id: 'small-parts-aerospace',
-        title: 'Small Precision Parts',
+        id: "aviation-composite",
+        name: "Composite Structural Pieces",
         description:
-          'Swiss machining for high-volume production of small, precise aerospace components.',
-        capabilities: ['swiss-machining', 'precision-grinding'],
-        companies: ['minic-precision'],
+          "Lightweight reinforcements such as ribs, spars and panel components that support better fuel economy and overall aircraft efficiency.",
       },
       {
-        id: 'aerospace-prototyping',
-        title: 'Aerospace Prototyping',
+        id: "aviation-ducts",
+        name: "Ducts and Vents",
         description:
-          'Rapid prototyping and testing of aerospace components with certified materials.',
-        capabilities: ['cnc-prototyping', 'additive-manufacturing'],
-        companies: ['pardev'],
+          "Intricate air-management parts for HVAC systems, ensuring proper airflow and cabin temperature control.",
       },
-    ],
-    capabilities: [
-      'cnc-machining',
-      'multi-axis-machining',
-      'swiss-machining',
-      'edm',
-      'precision-grinding',
-    ],
-    companies: ['pardev', 'cgr-tech', 'minic-precision'],
-    caseStudies: [],
-    certifications: ['itar', 'iso-9001', 'as9100'],
-    standards: ['AS9100', 'ITAR', 'NADCAP', 'MIL-STD'],
-    typicalProjects: [
       {
-        id: 'actuator-component',
-        name: 'Aircraft Actuator Component',
+        id: "aviation-grommets",
+        name: "Grommets and Seals",
         description:
-          'Development and production of precision actuator components for commercial aircraft.',
-        stages: [
-          {
-            name: 'Prototype Development',
-            description: 'Initial prototypes with certified materials',
-            company: 'pardev',
-            duration: '2-3 weeks',
-          },
-          {
-            name: 'Precision Machining',
-            description: 'Final machining to aerospace tolerances',
-            company: 'cgr-tech',
-            duration: '4-6 weeks',
-          },
-          {
-            name: 'Production',
-            description: 'Ongoing production with full material traceability',
-            company: 'cgr-tech',
-            duration: 'Ongoing',
-          },
-        ],
-        companiesInvolved: ['pardev', 'cgr-tech'],
-        timeline: '3-4 months',
-        volume: '1,000-10,000 units/year',
+          "Specialized components designed to block dust, moisture and air leaks. Some versions absorb vibration and support long-term system stability.",
+      },
+      {
+        id: "aviation-switches",
+        name: "Switches and Buttons",
+        description:
+          "Durable controls for cockpit and cabin panels with precise tactile performance.",
+      },
+      {
+        id: "aviation-lighting",
+        name: "Lighting Components",
+        description:
+          "Housings for interior lights, navigation lights and landing lights, made from materials that withstand heat and environmental exposure.",
+      },
+      {
+        id: "aviation-bumpers",
+        name: "Bumpers and Pads",
+        description:
+          "Protective elements for cargo areas and compartments, helping reduce noise and prevent damage.",
+      },
+      {
+        id: "aviation-insulation",
+        name: "Insulation Panels",
+        description:
+          "Lightweight thermal and acoustic panels made from advanced fire-resistant polymers.",
+      },
+      {
+        id: "aviation-fuel",
+        name: "Fuel System Components",
+        description:
+          "Seals, caps and fittings designed to resist fuel exposure and maintain secure pressure levels.",
+      },
+      {
+        id: "aviation-landing",
+        name: "Landing Gear Covers",
+        description:
+          "Streamlined, impact-resistant covers that reduce drag and shield landing gear assemblies.",
       },
     ],
   },
   {
-    id: 'consumer-electronics',
-    slug: 'consumer-electronics',
-    name: 'Consumer Electronics',
+    id: "electronics",
+    slug: "electronics",
+    name: "Electronics",
     description:
-      'Fast-paced consumer electronics manufacturing requires rapid prototyping, scalable production, and the ability to meet tight time-to-market demands.',
-    icon: 'smartphone',
-    heroImage: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2400&q=80',
-    challenges: [
+      "We provide precision-engineered plastic components for the electronics sector, combining high-quality manufacturing with sharp visual finish. Our expertise supports everything from consumer devices to rugged electronic assemblies that demand accuracy, durability and clean aesthetics.",
+    // heroImage:
+    //   "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2400&q=80",
+    heroImage: "/images/industries/electronics.jpg",
+    whatWeOffer: [
       {
-        id: 'time-to-market',
-        title: 'Time to Market',
+        id: "electronics-custom",
+        name: "Custom Injection Molding",
         description:
-          'Meeting aggressive launch schedules while maintaining quality standards.',
+          "Tailored solutions for complex electronic housings, buttons, enclosures and internal components.",
       },
       {
-        id: 'design-changes',
-        title: 'Design Iterations',
+        id: "electronics-prototyping",
+        name: "Prototyping & Design Support",
         description:
-          'Accommodating frequent design changes during development and early production.',
+          "Fast prototypes and design guidance to refine part geometry, improve functionality and streamline production.",
       },
       {
-        id: 'cost-optimization',
-        title: 'Cost Optimization',
+        id: "electronics-sustainable",
+        name: "Sustainable Manufacturing",
         description:
-          'Balancing quality requirements with competitive pricing for consumer markets.',
+          "Environmentally conscious materials and processes that reduce waste while maintaining performance.",
       },
       {
-        id: 'volume-scalability',
-        title: 'Volume Scalability',
+        id: "electronics-technology",
+        name: "Advanced Manufacturing Technology",
         description:
-          'Scaling from prototype to high-volume production quickly and efficiently.',
-      },
-    ],
-    solutions: [
-      {
-        id: 'rapid-prototyping-electronics',
-        title: 'Rapid Electronics Prototyping',
-        description:
-          'Fast-turnaround prototyping with 3D printing and CNC machining for quick design validation.',
-        capabilities: ['additive-manufacturing', 'cnc-prototyping'],
-        companies: ['pardev'],
+          "State-of-the-art equipment ensures tight tolerances, stable production and consistent quality for high-volume or specialty projects.",
       },
       {
-        id: 'plastic-enclosures',
-        title: 'Plastic Enclosures & Housings',
+        id: "electronics-quality",
+        name: "Quality & Compliance",
         description:
-          'High-volume injection molding of consumer electronics enclosures with excellent surface finish.',
-        capabilities: ['injection-molding', 'tool-design', 'overmolding'],
-        companies: ['pti'],
+          "Strict inspection standards and full industry compliance to guarantee reliability and long-term durability.",
       },
       {
-        id: 'small-components',
-        title: 'Small Precision Components',
+        id: "electronics-collaborative",
+        name: "Collaborative Development",
         description:
-          'High-volume production of small metal and plastic components for electronics assembly.',
-        capabilities: ['swiss-machining', 'micro-machining'],
-        companies: ['minic-precision'],
+          "We work closely with clients to create components that meet exact technical and aesthetic requirements, from concept to final assembly.",
       },
     ],
-    capabilities: [
-      'additive-manufacturing',
-      'injection-molding',
-      'swiss-machining',
-      'cnc-machining',
-      'assembly',
-    ],
-    companies: ['pardev', 'pti', 'minic-precision'],
-    caseStudies: [],
-    certifications: ['iso-9001'],
-    standards: ['ISO 9001', 'RoHS', 'REACH'],
-    typicalProjects: [
+    processes: [],
+    applications: [],
+  },
+  {
+    id: "medical",
+    slug: "medical",
+    name: "Medical",
+    description:
+      "We support the medical sector with precise, reliable and efficient plastic injection molding built for demanding clinical applications. With decades of experience, we produce components that meet strict regulatory, performance and safety requirements while enabling flexible, innovative part design.",
+    // heroImage:
+    //   "https://images.unsplash.com/photo-1581093458791-9d42e1c5e2e4?auto=format&fit=crop&w=2400&q=80",
+    heroImage: "/images/industries/medical.jpg",
+    whatWeOffer: [
       {
-        id: 'wearable-device',
-        name: 'Wearable Device Development',
+        id: "medical-full-service",
+        name: "Full-Service Manufacturing",
         description:
-          'Complete manufacturing solution for a new wearable fitness device.',
-        stages: [
-          {
-            name: 'Concept Prototyping',
-            description: '3D printed prototypes for form and fit validation',
-            company: 'pardev',
-            duration: '1-2 weeks',
-          },
-          {
-            name: 'Functional Prototypes',
-            description: 'CNC machined prototypes with production-like materials',
-            company: 'pardev',
-            duration: '2-3 weeks',
-          },
-          {
-            name: 'Tooling & Pilot',
-            description: 'Injection mold tooling and pilot production run',
-            company: 'pti',
-            duration: '6-8 weeks',
-          },
-          {
-            name: 'Full Production',
-            description: 'High-volume production of plastic housings',
-            company: 'pti',
-            duration: 'Ongoing',
-          },
-          {
-            name: 'Metal Components',
-            description: 'Swiss machined metal fasteners and connectors',
-            company: 'minic-precision',
-            duration: 'Ongoing',
-          },
-        ],
-        companiesInvolved: ['pardev', 'pti', 'minic-precision'],
-        timeline: '3-5 months',
-        volume: '50,000-500,000 units/year',
+          "From prototypes to large-scale production runs, we handle projects ranging from low volumes to 100,000 units or more each year.",
+      },
+      {
+        id: "medical-cleanroom",
+        name: "Cleanroom Molding",
+        description:
+          "ISO 14644 Class 8 cleanroom capabilities for components that require controlled, contamination-free production.",
+      },
+      {
+        id: "medical-prototyping",
+        name: "Prototyping",
+        description:
+          "Production-quality prototypes that help refine part geometry and accelerate development.",
+      },
+      {
+        id: "medical-insert",
+        name: "Insert & Overmolding",
+        description:
+          "Design flexibility for complex, multi-material components that streamline assembly and improve performance.",
+      },
+      {
+        id: "medical-finishing",
+        name: "Finishing Services",
+        description:
+          "Pad printing, laser marking, packaging and other post-processing options to deliver ready-to-use medical parts.",
+      },
+      {
+        id: "medical-high-temp",
+        name: "High-Temperature Molding",
+        description:
+          "Materials and processes suited for devices that demand superior strength, heat resistance or sterilization compatibility.",
+      },
+    ],
+    processes: [],
+    applications: [
+      {
+        id: "medical-endoscopy",
+        description: "Endoscopy and laparoscopy",
+      },
+      {
+        id: "medical-cardiovascular",
+        description: "Cardiovascular and drug-delivery components",
+      },
+      {
+        id: "medical-neurological",
+        description: "Neurological and robotic surgery systems",
+      },
+      {
+        id: "medical-monitoring",
+        description: "Patient monitoring and care devices",
+      },
+      {
+        id: "medical-orthopedic",
+        description: "Orthopedic tools and housings",
+      },
+      {
+        id: "medical-laboratory",
+        description: "Laboratory, organ and cell-growth equipment",
       },
     ],
   },
   {
-    id: 'automotive',
-    slug: 'automotive',
-    name: 'Automotive',
+    id: "military",
+    slug: "military",
+    name: "Military",
     description:
-      'Automotive manufacturing demands high-volume production capabilities, rigorous quality standards, and the ability to meet automotive industry certifications.',
-    icon: 'car',
-    heroImage: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=2400&q=80',
-    challenges: [
+      "We produce lightweight, durable and highly engineered plastic components tailored to the strict demands of military and aerospace programs. Our team handles complex, low- to high-volume injection molding with the precision and reliability that mission-critical environments require.",
+    // heroImage:
+    //   "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=2400&q=80",
+    heroImage: "/images/industries/military.jpg",
+    whatWeOffer: [
       {
-        id: 'ppap-requirements',
-        title: 'PPAP Requirements',
+        id: "military-custom",
+        name: "Custom Design & Engineering",
         description:
-          'Meeting Production Part Approval Process requirements for automotive suppliers.',
+          "We build parts to your exact specifications, from concept to finished product, with fast turnaround and full technical support.",
       },
       {
-        id: 'high-volume-quality',
-        title: 'High-Volume Quality',
+        id: "military-materials",
+        name: "Advanced Materials",
         description:
-          'Maintaining consistent quality across millions of parts with zero-defect expectations.',
+          "High-performance plastics such as PEEK, Ultem and glass-filled nylons deliver exceptional strength-to-weight ratios, ideal for improving mobility, fuel efficiency and overall system performance.",
       },
       {
-        id: 'cost-pressure',
-        title: 'Cost Pressure',
+        id: "military-precision",
+        name: "Precision & Repeatability",
         description:
-          'Meeting aggressive cost targets while maintaining quality and delivery performance.',
+          "Our molding process ensures tight tolerances and consistent results—vital for components used in defense, aviation and tactical systems.",
       },
       {
-        id: 'supply-chain',
-        title: 'Supply Chain Integration',
+        id: "military-complex",
+        name: "Complex Geometries",
         description:
-          'Integrating with complex automotive supply chains and JIT delivery requirements.',
-      },
-    ],
-    solutions: [
-      {
-        id: 'automotive-prototyping',
-        title: 'Automotive Prototyping',
-        description:
-          'Rapid prototyping of automotive components for design validation and testing.',
-        capabilities: ['cnc-prototyping', 'additive-manufacturing'],
-        companies: ['pardev'],
-      },
-      {
-        id: 'automotive-molding',
-        title: 'Automotive Injection Molding',
-        description:
-          'High-volume injection molding of interior and under-hood automotive components.',
-        capabilities: ['injection-molding', 'tool-design', 'insert-molding'],
-        companies: ['pti'],
-      },
-      {
-        id: 'automotive-precision',
-        title: 'Precision Automotive Parts',
-        description:
-          'Swiss machining and CNC machining of precision automotive components.',
-        capabilities: ['swiss-machining', 'cnc-machining'],
-        companies: ['cgr-tech', 'minic-precision'],
+          "Injection molding enables intricate shapes and the consolidation of multiple elements into a single part, reducing weight, weak points and assembly time.",
       },
     ],
-    capabilities: [
-      'injection-molding',
-      'cnc-machining',
-      'swiss-machining',
-      'additive-manufacturing',
-      'assembly',
-    ],
-    companies: ['pardev', 'pti', 'cgr-tech', 'minic-precision'],
-    caseStudies: [],
-    certifications: ['iso-9001', 'iatf-16949'],
-    standards: ['IATF 16949', 'ISO 9001', 'PPAP', 'APQP'],
-    typicalProjects: [
+    processes: [],
+    applications: [
       {
-        id: 'sensor-housing',
-        name: 'Automotive Sensor Housing',
-        description:
-          'Development and production of plastic housings for automotive sensors.',
-        stages: [
-          {
-            name: 'Prototype Development',
-            description: 'Initial prototypes for design validation',
-            company: 'pardev',
-            duration: '2-3 weeks',
-          },
-          {
-            name: 'Tooling Development',
-            description: 'Injection mold tooling with PPAP documentation',
-            company: 'pti',
-            duration: '8-10 weeks',
-          },
-          {
-            name: 'Production Launch',
-            description: 'High-volume production with SPC monitoring',
-            company: 'pti',
-            duration: 'Ongoing',
-          },
-        ],
-        companiesInvolved: ['pardev', 'pti'],
-        timeline: '4-5 months',
-        volume: '100,000-1,000,000 units/year',
+        id: "military-aerospace",
+        description: "Aerospace and aircraft components",
+      },
+      {
+        id: "military-electronics",
+        description: "Military electronics housings",
+      },
+      {
+        id: "military-structural",
+        description: "Structural, load-bearing and support elements",
+      },
+      {
+        id: "military-protective",
+        description: "Lightweight protective parts and covers",
+      },
+      {
+        id: "military-connectors",
+        description: "High-strength connectors, brackets and mounts",
       },
     ],
   },
@@ -439,8 +376,4 @@ export const industries: Industry[] = [
 
 export const getIndustryBySlug = (slug: string): Industry | undefined => {
   return industries.find(industry => industry.slug === slug)
-}
-
-export const getIndustriesByCompany = (companyId: string): Industry[] => {
-  return industries.filter(industry => industry.companies.includes(companyId))
 }

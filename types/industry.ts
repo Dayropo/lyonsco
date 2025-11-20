@@ -7,16 +7,28 @@ export interface Industry {
   slug: string
   name: string
   description: string
-  icon: string
   heroImage: string
-  challenges: Challenge[]
-  solutions: Solution[]
-  capabilities: string[]
-  companies: string[]
-  caseStudies: string[]
-  certifications: string[]
-  standards: string[]
-  typicalProjects: TypicalProject[]
+  whatWeOffer: Capability[]
+  processes: Process[]
+  applications: Application[]
+}
+
+export interface Capability {
+  id: string
+  name: string
+  description: string
+}
+
+export interface Application {
+  id: string
+  name?: string
+  description: string
+}
+
+export interface Process {
+  id: string
+  name: string
+  description: string
 }
 
 export interface Challenge {
@@ -50,8 +62,4 @@ export interface ProjectStage {
   duration: string
 }
 
-export type IndustrySlug =
-  | "medical-devices"
-  | "aerospace-defense"
-  | "consumer-electronics"
-  | "automotive"
+export type IndustrySlug = "automotive" | "aviation" | "electronics" | "medical" | "military"
