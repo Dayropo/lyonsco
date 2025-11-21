@@ -24,7 +24,8 @@ const contactItems = [
     id: "address",
     icon: MapPin,
     label: "Address",
-    value: `${COMPANY_ADDRESS.street}, ${COMPANY_ADDRESS.city}, ${COMPANY_ADDRESS.state} ${COMPANY_ADDRESS.zip}`,
+    //value: `${COMPANY_ADDRESS.street}, ${COMPANY_ADDRESS.city}, ${COMPANY_ADDRESS.state} ${COMPANY_ADDRESS.zip}`,
+    value: "",
     href: null,
   },
   {
