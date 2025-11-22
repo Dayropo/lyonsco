@@ -144,7 +144,7 @@ export function Header(): ReactElement {
               {CONTACT_PHONE}
             </a>
           </div>
-          <nav className="hidden items-center lg:flex" suppressHydrationWarning>
+          <nav className="hidden items-center md:flex" suppressHydrationWarning>
             {navItems.map(item => {
               if (item.label === "Capabilities") {
                 return (
