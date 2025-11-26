@@ -64,19 +64,14 @@ export function HeroSection() {
           >
             {SITE_TAGLINE}
           </motion.h1>
-          <motion.div
-            className="mx-auto mt-8 max-w-3xl space-y-4"
-            variants={itemVariants}
-          >
-            <p className="text-base text-slate-100 sm:text-lg md:text-xl">
-              {SITE_DESCRIPTION}
-            </p>
+          <motion.div className="mx-auto mt-8 max-w-3xl space-y-4" variants={itemVariants}>
+            <p className="text-base text-slate-100 sm:text-lg md:text-xl">{SITE_DESCRIPTION}</p>
             <p className="text-sm text-slate-200/90 sm:text-base md:text-lg">
               {SITE_SUBDESCRIPTION}
             </p>
           </motion.div>
           <motion.p
-            className="mx-auto mt-6 max-w-2xl text-sm italic text-slate-300/80 sm:text-base"
+            className="mx-auto mt-6 max-w-2xl text-sm text-slate-300/80 italic sm:text-base"
             variants={itemVariants}
           >
             {SITE_CTA_TEXT}
@@ -92,13 +87,6 @@ export function HeroSection() {
               <Mail size={20} />
               Get a Quote
               <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
-            </Link>
-            <Link
-              href="/capabilities"
-              className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-white/30 bg-white/10 px-8 py-4 text-base font-semibold text-white backdrop-blur-sm transition-all hover:border-white/50 hover:bg-white/20 focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none"
-            >
-              Explore Capabilities
-              <ArrowRight size={18} />
             </Link>
           </motion.div>
         </motion.div>
