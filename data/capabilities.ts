@@ -167,8 +167,8 @@ export const capabilities: Record<string, any> = {
       },
     ],
   },
-  "machining": {
-    title: "Machining",
+  "cnc-machining": {
+    title: "CNC Machining",
     description: "Precision machining for functional prototypes and production components",
     heroImage: "/images/capabilities/cnc-machining.webp",
     overview: {
@@ -341,14 +341,172 @@ export const capabilities: Record<string, any> = {
       },
     ],
   },
-  // "prototype-machining": {
-  //   title: "Prototype Machining",
-  //   description: "Precision machining for functional prototypes and production components",
-  //   heroImage: "/images/capabilities/prototype-machining.webp",
-  //   overview: { 
-  //     intro:
-  //       "",
-
-  // }
-  // Add other capabilities here...
+  "screw-machining": {
+    title: "Screw Machining",
+    description: "",
+    heroImage: "/images/capabilities/screw-machining.webp",
+    overview: {
+      intro:
+        "",
+      details:
+        "",
+    },
+    benefits: [
+      // {
+      //   icon: "zap",
+      //   title: "Fast Turnaround",
+      //   description: "Machined parts delivered in as little as three days",
+      // },
+      // {
+      //   icon: "shield-check",
+      //   title: "100% Inspection",
+      //   description: "Control dimensions and tight tolerances fully inspected",
+      // },
+      // {
+      //   icon: "dollar-sign",
+      //   title: "Competitive Pricing",
+      //   description: "Extremely competitive pricing with real-time design flexibility",
+      // },
+      // {
+      //   icon: "wrench",
+      //   title: "Complete Solutions",
+      //   description: "From raw material to finished assembly and shipping",
+      // },
+    ],
+    partnerCompanies: [
+      {
+        id: "minic",
+        name: "Minic",
+        logo: "/images/companies/minic-logo.webp",
+        href: "/companies/minic",
+      },
+    ],
+    technicalSpecs: [
+      {
+        icon: "ruler",
+        label: "Tolerance",
+        value: '±0.0001"',
+        description: "Ultra-precision for critical components",
+      },
+      {
+        icon: "box",
+        label: "Material Range",
+        value: '0.005-1.00"',
+        description: "Thin gage to standard thickness capabilities",
+      },
+      {
+        icon: "layers",
+        label: "Processes",
+        value: "4 Types",
+        description: "CNC Swiss Turning, CAM Swiss Automatic Lathes, CNC Milling, and Cold Heading",
+      },
+      {
+        icon: "clock",
+        label: "Materials",
+        value: "10+ Metals",
+        description: "Common to exotic metals and alloys",
+      },
+    ],
+    relatedCapabilities: [
+      {
+        title: "CNC Machining",
+        href: "/capabilities/cnc-machining",
+        description: "Precision machining for prototypes and production",
+      },
+      {
+        title: "Urethane Casting",
+        href: "/capabilities/urethane-silicone-casting",
+        description: "Low-volume production and prototyping",
+      },
+      {
+        title: "Injection Molding",
+        href: "/capabilities/injection-molding",
+        description: "Precision plastic injection molding services",
+      },
+    ],
+  },
+  "urethane-silicone-casting": {
+    title: "Urethane Silicone Casting",
+    description: "",
+    heroImage: "/images/capabilities/urethane-silicone-casting.webp",
+    overview: {
+      intro:
+        "",
+      details:
+        "",
+    },
+    benefits: [
+      // {
+      //   icon: "zap",
+      //   title: "Fast Turnaround",
+      //   description: "Machined parts delivered in as little as three days",
+      // },
+      // {
+      //   icon: "shield-check",
+      //   title: "100% Inspection",
+      //   description: "Control dimensions and tight tolerances fully inspected",
+      // },
+      // {
+      //   icon: "dollar-sign",
+      //   title: "Competitive Pricing",
+      //   description: "Extremely competitive pricing with real-time design flexibility",
+      // },
+      // {
+      //   icon: "wrench",
+      //   title: "Complete Solutions",
+      //   description: "From raw material to finished assembly and shipping",
+      // },
+    ],
+    partnerCompanies: [
+      {
+        id: "pardev",
+        name: "Paradigm Development Group Inc.",
+        logo: "/images/companies/pardev-logo.webp",
+        href: "/companies/pardev",
+      },
+    ],
+    technicalSpecs: [
+      // {
+      //   icon: "ruler",
+      //   label: "Tolerance",
+      //   value: '±0.0001"',
+      //   description: "Ultra-precision for critical components",
+      // },
+      // {
+      //   icon: "box",
+      //   label: "Material Range",
+      //   value: '0.005-1.00"',
+      //   description: "Thin gage to standard thickness capabilities",
+      // },
+      // {
+      //   icon: "layers",
+      //   label: "Processes",
+      //   value: "4 Types",
+      //   description: "CNC Swiss Turning, CAM Swiss Automatic Lathes, CNC Milling, and Cold Heading",
+      // },
+      // {
+      //   icon: "clock",
+      //   label: "Materials",
+      //   value: "10+ Metals",
+      //   description: "Common to exotic metals and alloys",
+      // },
+    ],
+    relatedCapabilities: [
+      {
+        title: "CNC Machining",
+        href: "/capabilities/cnc-machining",
+        description: "Precision machining for prototypes and production",
+      },
+      {
+        title: "Urethane Casting",
+        href: "/capabilities/urethane-silicone-casting",
+        description: "Low-volume production and prototyping",
+      },
+      {
+        title: "Injection Molding",
+        href: "/capabilities/injection-molding",
+        description: "Precision plastic injection molding services",
+      },
+    ],
+  }
 }

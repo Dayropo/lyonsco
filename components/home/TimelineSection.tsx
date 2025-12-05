@@ -2,7 +2,18 @@
 
 import type { JSX } from "react"
 import { motion } from "framer-motion"
-import { Lightbulb, Wrench, Cog, Factory, Zap } from "lucide-react"
+import {
+  Lightbulb,
+  Wrench,
+  Cog,
+  Factory,
+  Zap,
+  FileText,
+  SearchCheck,
+  Puzzle,
+  Truck,
+  LifeBuoy,
+} from "lucide-react"
 import { PRODUCTION_STAGES } from "@/lib/constants"
 
 interface TimelineStage {
@@ -15,8 +26,8 @@ interface TimelineStage {
 
 const stages: TimelineStage[] = [
   {
-    id: "concept",
-    name: "Concept",
+    id: "design-review",
+    name: "Design Review",
     description:
       "Initial ideation and feasibility studies to ensure manufacturability and cost-effectiveness",
     icon: <Lightbulb className="h-8 w-8" />,
@@ -31,25 +42,57 @@ const stages: TimelineStage[] = [
     company: "Pardev",
   },
   {
-    id: "tooling",
-    name: "Tooling",
+    id: "quote",
+    name: "Quote",
     description:
       "Precision production tooling and process development for repeatable, high-quality parts",
+    icon: <FileText className="h-8 w-8" />,
+    company: "PTI / CGR Tech",
+  },
+  {
+    id: "tooling",
+    name: "Tooling",
+    description: "Full-scale manufacturing supported by robust quality control and traceability",
     icon: <Cog className="h-8 w-8" />,
     company: "PTI / CGR Tech",
   },
   {
     id: "production",
     name: "Production",
-    description: "Full-scale manufacturing supported by robust quality control and traceability",
+    description: "Ultra-precise parts for demanding applications",
     icon: <Factory className="h-8 w-8" />,
-    company: "PTI / CGR Tech",
+    company: "Minic Precision",
   },
   {
-    id: "precision",
-    name: "Precision Components",
-    description: "Ultra-precise parts for demanding applications",
-    icon: <Zap className="h-8 w-8" />,
+    id: "inspection",
+    name: "Inspection",
+    description:
+      "Quality control and inspection to ensure compliance with specifications and standards",
+    icon: <SearchCheck className="h-8 w-8" />,
+    company: "Minic Precision",
+  },
+  {
+    id: "assembly",
+    name: "Assembly",
+    description:
+      "Quality control and inspection to ensure compliance with specifications and standards",
+    icon: <Puzzle className="h-8 w-8" />,
+    company: "Minic Precision",
+  },
+  {
+    id: "delivery",
+    name: "Delivery",
+    description:
+      "Quality control and inspection to ensure compliance with specifications and standards",
+    icon: <Truck className="h-8 w-8" />,
+    company: "Minic Precision",
+  },
+  {
+    id: "ongoing-support",
+    name: "Ongoing Support",
+    description:
+      "Quality control and inspection to ensure compliance with specifications and standards",
+    icon: <LifeBuoy className="h-8 w-8" />,
     company: "Minic Precision",
   },
 ]
@@ -113,7 +156,7 @@ export function TimelineSection(): JSX.Element {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-5 md:gap-4">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-5 md:gap-6 lg:grid-cols-9">
             {stages.map((stage, index) => (
               <motion.div key={stage.id} className="timeline-item relative" variants={itemVariants}>
                 <div className="flex flex-col items-center text-center">
@@ -122,12 +165,13 @@ export function TimelineSection(): JSX.Element {
                   </div>
                   <div className="mt-4">
                     <h3 className="text-foreground text-lg font-semibold">{stage.name}</h3>
-                    <p className="text-muted-foreground mt-2 text-sm">{stage.description}</p>
+                    {/* <p className="text-muted-foreground mt-2 text-sm">{stage.description}</p> */}
                     {/* <p className="text-secondary mt-3 text-xs font-medium">{stage.company}</p> */}
                   </div>
                 </div>
                 {index < stages.length - 1 && (
-                  <div className="bg-border mx-auto mt-4 h-8 w-0.5 md:hidden" />
+                  // <div className="bg-border mx-auto mt-4 h-8 w-0.5 md:hidden" />
+                  <div className="bg-secondary/40 absolute top-1/3 left-1/2 hidden h-[2px] w-full max-w-[80px] translate-x-[40px] -translate-y-1/2 lg:block" />
                 )}
               </motion.div>
             ))}

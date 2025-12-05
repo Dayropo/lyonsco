@@ -11,6 +11,7 @@ export interface Industry {
   whatWeOffer: WhatWeOffer[]
   processes: Process[]
   applications: Application[]
+  components?: IndustryComponentGroup[]
 }
 
 export interface WhatWeOffer {
@@ -23,6 +24,13 @@ export interface Application {
   id: string
   name?: string
   description: string
+}
+
+export interface IndustryComponentGroup {
+  id: string
+  name: string
+  icon: string
+  components: string[]
 }
 
 export interface Process {

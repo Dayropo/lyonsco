@@ -21,6 +21,7 @@ export const companies: Company[] = [
       "Rapid Prototyping",
       "3D Printing (FDM, SLA, SLS)",
       "CNC Machining for Prototypes",
+      "Urethane Castings",
     ],
     capabilities: ["additive-manufacturing", "cnc-prototyping"],
     industries: ["medical-devices", "consumer-electronics", "automotive", "aerospace-defense"],
@@ -98,9 +99,9 @@ export const companies: Company[] = [
       address: "123 Innovation Drive, Chicago, IL 60601",
     },
     location: {
-      city: "Chicago",
-      state: "IL",
-      country: "USA",
+      // city: "Chicago",
+      // state: "IL",
+      country: "USA Based",
     },
     established: 1995,
   },
@@ -117,12 +118,12 @@ export const companies: Company[] = [
     heroImage:
       "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?auto=format&fit=crop&w=2400&q=80",
     specialties: [
-      "Plastic Injection Molding",
-      "Rapid Tool Design & Manufacturing",
-      "Prototype Injection Molding",
-      "In-House Tooling",
-      "Cleanroom Production",
-      "Value-Added Assembly",
+      "Low Volume Manufacturing",
+      "High Volume Manufacturing",
+      "Contract Manufacturing",
+      "Assembly",
+      "Part Decorating",
+      "Automation",
     ],
     capabilities: [
       "injection-molding",
@@ -134,7 +135,7 @@ export const companies: Company[] = [
     certifications: [
       {
         id: "iso-9001",
-        name: "ISO 9001:2015",
+        name: "ISO 9001",
         description: "Quality Management System",
         icon: "award",
         issuedBy: "ISO",
@@ -150,13 +151,18 @@ export const companies: Company[] = [
     equipment: [
       {
         id: "injection-molding-machines",
-        name: "Injection Molding Machines",
-        type: "Plastic Molding",
-        capabilities: ["High-volume production", "Tight tolerances", "Complex geometries"],
+        name: "60 Injection Molding Machines",
+        type: "Plastic Injection Molding",
+        capabilities: [
+          "High Temperature Molding",
+          "Insert Molding",
+          "Over Molding",
+          "ISO Class 8 Cleanroom for Molding & Assembly",
+        ],
         specifications: {
-          "Tonnage Range": "50-500 tons",
-          "Shot Size": "1-32 oz",
-          "Cycle Time": "10-60 seconds",
+          "Tonnage Range": "35-300 tons",
+          "Shot Size": "0.09 to 25.56 oz.",
+          // "Cycle Time": "10-60 seconds",
         },
       },
     ],
@@ -183,9 +189,9 @@ export const companies: Company[] = [
       address: "456 Manufacturing Way, Elk Grove Village, IL 60007",
     },
     location: {
-      city: "Elk Grove Village",
-      state: "IL",
-      country: "USA",
+      // city: "Elk Grove Village",
+      // state: "IL",
+      country: "USA Based",
     },
     established: 1988,
   },
@@ -193,11 +199,63 @@ export const companies: Company[] = [
     id: "cgr-tech",
     slug: "cgr-tech",
     name: "CGR Tech",
-    tagline: "Precision Components, Machining & Stamping",
+    tagline: "Precision stamping and machining for demanding metal components.",
     description:
-      "CGR Tech specializes in precision metal machining and stamping. Their rigorous quality standards ensure the highest level of precision and compliance for critical applications.",
+      "CGR Technologies Inc. – Stamping Group delivers precision metal stampings with high-accuracy parts of virtually any complexity, holding tolerances down to ±0.0005 in and micro-stamping thin-gage and thin-wall metals from 0.001 in to 0.125 in. The team also specializes in close-tolerance machining down to 50 millionths of an inch (0.0013 mm), routinely meeting strict geometric requirements in hardened steels, exotic alloys, titanium, Inconel, and other challenging materials.",
     about:
-      "CGR Technologies, with facilities in Palatine and Elk Grove Village, Illinois, delivers precision manufacturing solutions for complex metal components and assemblies. Specializing in CNC machining, metal stamping, fabrication, and assembly, CGR supports customers from prototype through high-volume production. With in-house engineering and tooling expertise, the company offers end-to-end solutions that ensure accuracy, consistency, and efficiency. Working with a wide range of metals and alloys, CGR provides high-quality parts for defense, industrial, automotive, and commercial applications, backed by ISO 9001 certification and a strong commitment to quality and continuous improvement.",
+      "CGR Technologies Inc. – Stamping Group leverages extensive press capabilities to provide precision metal stampings for demanding applications. The team specializes in high-accuracy pieces of virtually any complexity, working to tolerances of ±0.0005 in. Stamping presses enable micro-stamping of thin-gage and thin-wall metals as thin as 0.001 in up to 0.125 in, supporting prototype, short-run, and low-volume production. Core stamping processes include coining, compound and progressive stamping, fine blanking, and open tooling. CGR Technologies also offers precision machining services focused on very tight dimensional and geometric control.",
+    aboutSections: [
+      {
+        id: "stamping",
+        title: "Stamping",
+        paragraphs: [
+          "CGR Technologies Inc. – Stamping Group leverages extensive press capabilities to provide precision metal stampings. We specialize in high-accuracy pieces of any complexity, working to tolerances of ±0.0005 in.",
+          "Our stamping presses allow us to micro-stamp thin-gage and thin-wall metals as thin as 0.001 in up to a maximum of 0.125 in, supporting:",
+        ],
+        bulletGroups: [
+          {
+            id: "stamping-production-modes",
+            items: ["Prototype production", "Short-run production", "Low-volume production"],
+          },
+          {
+            id: "stamping-processes",
+            title: "Our stamping processes include:",
+            items: ["Coining", "Compound or progressive stamping", "Fine blanking", "Open tooling"],
+          },
+        ],
+      },
+      {
+        id: "precision-machining",
+        title: "Precision Machining",
+        paragraphs: [
+          "CGR Technologies, Inc. specializes in close-tolerance machining down to 50 millionths of an inch (0.0013 mm) on customer-designed parts.",
+          "We excel in producing components that require tightly controlled dimensional and geometric tolerances, including:",
+        ],
+        bulletGroups: [
+          {
+            id: "geometric-tolerances",
+            items: ["Flatness", "Perpendicularity", "Roundness", "Run-out", "Parallelism"],
+          },
+          {
+            id: "difficult-materials",
+            title: "Our team is highly experienced in machining difficult materials, including:",
+            items: [
+              "Hardened steels",
+              "Exotic alloys",
+              "Titanium",
+              "Inconel",
+              "Other challenging metals",
+            ],
+          },
+          {
+            id: "precision-expertise",
+            title:
+              "This expertise ensures that even the most demanding applications meet strict specifications with repeatable precision.",
+            items: [],
+          },
+        ],
+      },
+    ],
     logo: "/images/companies/cgr-logo.webp",
     heroImage:
       "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=2400&q=80",
@@ -207,6 +265,7 @@ export const companies: Company[] = [
       "Precision Stamping",
       "Prototyping",
       "Low-Volume, High-Mix Manufacturing",
+      "Turning, Milling, Grinding",
     ],
     capabilities: [
       "cnc-machining",
@@ -244,30 +303,37 @@ export const companies: Company[] = [
         icon: "wind",
         issuedBy: "ISO",
       },
-    ],
-    equipment: [
       {
-        id: "cnc-machining-centers",
-        name: "5-Axis CNC Machining Centers",
-        type: "CNC Machining",
-        capabilities: ["Complex geometries", "Tight tolerances", "High precision"],
-        specifications: {
-          "Work Envelope": "600 x 500 x 400mm",
-          Tolerance: '±0.0005"',
-          Materials: "Aluminum, Stainless Steel, Titanium, Brass, Plastics",
-        },
-      },
-      {
-        id: "edm-machines",
-        name: "Wire & Sinker EDM",
-        type: "EDM",
-        capabilities: ["Micro-machining", "Hard materials", "Complex shapes"],
-        specifications: {
-          Tolerance: '±0.0001"',
-          "Wire Diameter": '0.004" - 0.012"',
-        },
+        id: "as9100",
+        name: "AS9100",
+        description: "Aerospace Quality Management System",
+        icon: "shield-check",
+        issuedBy: "IAQG",
       },
     ],
+    // equipment: [
+    //   {
+    //     id: "cnc-machining-centers",
+    //     name: "5-Axis CNC Machining Centers",
+    //     type: "CNC Machining",
+    //     capabilities: ["Complex geometries", "Tight tolerances", "High precision"],
+    //     specifications: {
+    //       "Work Envelope": "600 x 500 x 400mm",
+    //       Tolerance: '±0.0005"',
+    //       Materials: "Aluminum, Stainless Steel, Titanium, Brass, Plastics",
+    //     },
+    //   },
+    //   {
+    //     id: "edm-machines",
+    //     name: "Wire & Sinker EDM",
+    //     type: "EDM",
+    //     capabilities: ["Micro-machining", "Hard materials", "Complex shapes"],
+    //     specifications: {
+    //       Tolerance: '±0.0001"',
+    //       "Wire Diameter": '0.004" - 0.012"',
+    //     },
+    //   },
+    // ],
     volumeRange: {
       min: 100,
       max: 100000,
@@ -306,9 +372,9 @@ export const companies: Company[] = [
       address: "789 Precision Lane, Schaumburg, IL 60173",
     },
     location: {
-      city: "Schaumburg",
-      state: "IL",
-      country: "USA",
+      // city: "Schaumburg",
+      // state: "IL",
+      country: "USA Based",
     },
     established: 2001,
   },
@@ -316,11 +382,142 @@ export const companies: Company[] = [
     id: "minic-precision",
     slug: "minic-precision",
     name: "Minic Precision",
-    tagline: "Ultra-Precise Swiss Machining for Small Parts",
+    tagline: "High-precision screw machining and CNC manufacturing.",
     description:
-      "Minic Precision offers ultra-precise Swiss-style machining for small, complex components. Their advanced Swiss turning capabilities deliver exceptional accuracy and surface finish for the most demanding applications.",
+      "Minic Precision offers high-precision screw machining and CNC manufacturing for a wide range of components, from early prototypes through full production runs.",
     about:
-      "Minic Precision is a leading provider of high-precision machining solutions serving the aerospace, defense, medical, and industrial markets. With advanced CNC milling and turning capabilities, Minic specializes in producing complex, tight-tolerance components from a wide range of metals and alloys. The company’s in-house engineering and quality teams ensure every part meets the most demanding specifications, from prototype through full production. Supported by ISO-certified quality systems and state-of-the-art inspection equipment, Minic Precision is committed to delivering reliable, consistent performance and exceptional customer service on every project.",
+      "Minic Precision provides high-precision screw machining and CNC manufacturing for components that demand tight tolerances, fine surface finishes, and repeatable quality. From early prototypes to full production runs, Minic supports customers across a wide range of diameters, lengths, and materials.",
+    aboutSections: [
+      {
+        id: "capabilities",
+        title: "Precision Machining Capabilities",
+        paragraphs: [
+          "Minic offers high-precision screw machining and CNC manufacturing for a wide range of components, from prototypes to full production runs.",
+        ],
+        bulletGroups: [
+          {
+            id: "diameters",
+            title: "Diameters",
+            items: ['0.005" to 1.00"'],
+          },
+          {
+            id: "lengths",
+            title: "Lengths",
+            items: ['0.005" to 10.00"'],
+          },
+          {
+            id: "surface-finish",
+            title: "Surface Finish",
+            items: ["Up to 16 microinches"],
+          },
+          {
+            id: "tolerances",
+            title: "Tolerances",
+            items: ['Down to ±0.0001"'],
+          },
+        ],
+      },
+      {
+        id: "materials",
+        title: "Materials",
+        paragraphs: [
+          "Minic machines a wide range of metals and plastics to support demanding applications.",
+        ],
+        bulletGroups: [
+          {
+            id: "materials-list",
+            items: [
+              "Aircraft Aluminum",
+              "Alloy Steel",
+              "Aluminum",
+              "Beryllium Copper",
+              "Brass",
+              "Carbon Steel",
+              "Copper",
+              "Nickel",
+              "Nickel Silver",
+              "Plastics",
+              "Stainless Steel",
+              "Tellurium Copper",
+              "Titanium",
+              "Tungsten",
+            ],
+          },
+        ],
+      },
+      {
+        id: "equipment",
+        title: "Equipment Used",
+        paragraphs: [],
+        bulletGroups: [
+          {
+            id: "equipment-list",
+            items: [
+              "Tornos CNC Swiss turning machines",
+              "Citizen CNC Swiss turning machines",
+              "Tornos Swiss automatic screw machines",
+            ],
+          },
+        ],
+      },
+      {
+        id: "processes",
+        title: "Processes Used",
+        paragraphs: [],
+        bulletGroups: [
+          {
+            id: "processes-list",
+            items: [
+              "CNC Swiss turning",
+              "CAM Swiss automatic lathes",
+              "CNC milling",
+              "Cold heading",
+            ],
+          },
+        ],
+      },
+      {
+        id: "quantities",
+        title: "Quantities",
+        paragraphs: [],
+        bulletGroups: [
+          {
+            id: "quantities-list",
+            items: ["From prototyping to full production runs of all sizes"],
+          },
+        ],
+      },
+      {
+        id: "secondary-operations",
+        title: "Secondary Operations",
+        paragraphs: [],
+        bulletGroups: [
+          {
+            id: "secondary-ops-list",
+            items: [
+              "Broaching",
+              "Grinding",
+              "Heat treating",
+              "Plating",
+              "Tapping",
+              "Thread rolling",
+              "Tumbling",
+            ],
+          },
+        ],
+      },
+      {
+        id: "quality",
+        title: "Quality Systems",
+        paragraphs: [],
+        bulletGroups: [
+          {
+            id: "quality-list",
+            items: ["ISO 9001:2015 certified quality management system"],
+          },
+        ],
+      },
+    ],
     logo: "/images/companies/minic-logo.webp",
     heroImage:
       "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?auto=format&fit=crop&w=2400&q=80",
@@ -388,9 +585,9 @@ export const companies: Company[] = [
       address: "321 Swiss Way, Arlington Heights, IL 60004",
     },
     location: {
-      city: "Arlington Heights",
-      state: "IL",
-      country: "USA",
+      // city: "Arlington Heights",
+      // state: "IL",
+      country: "USA Based",
     },
     established: 1992,
   },

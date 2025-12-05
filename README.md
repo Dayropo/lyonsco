@@ -18,39 +18,48 @@ This website positions the organization as a **"One-Stop Manufacturing Solutions
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js 20+ and pnpm
 
 ### Installation
 
 1. Install dependencies:
+
 ```bash
 pnpm install
 ```
 
 2. **Important**: Install additional required dependencies:
+
 ```bash
 pnpm add react-hook-form @hookform/resolvers zod @tanstack/react-query zustand date-fns
 ```
 
 3. Install GSAP ScrollTrigger plugin:
+
 ```bash
 pnpm add gsap-trial
 ```
+
 Or use the GSAP package already installed (gsap@3.13.0 includes ScrollTrigger).
 
 ### Development
+
 ```bash
 pnpm dev
 ```
+
 Open [http://localhost:3322](http://localhost:3322) in your browser.
 
 ### Build
+
 ```bash
 pnpm build
 pnpm start
 ```
 
 ### Lint
+
 ```bash
 pnpm lint
 ```
@@ -111,20 +120,22 @@ lib/
 - **Data Fetching**: TanStack Query
 - **Date Handling**: date-fns
 
-## Key Pages to Build
+## Key Pages
 
-### Completed
-- ✅ Homepage with hero, timeline, value props, companies overview, and CTA
-- ✅ Updated header with new navigation
-- ✅ Data models for companies, capabilities, and industries
-- ✅ GSAP animation helpers
+### Implemented
+
+- ✅ Homepage with hero, lifecycle timeline, value props, companies overview, and CTA
+- ✅ Capabilities listing with individual capability pages (injection molding, metal stamping, CNC machining, screw machining, urethane/silicone casting)
+- ✅ Company profile pages for Pardev, PTI, CGR Tech, and Minic Precision, including structured about sections and specialties
+- ✅ Industry pages for Automotive, Aerospace, Electronics, Medical, and Military, including shared lifecycle and industry-specific components
+- ✅ Updated header navigation and companies value proposition content
+- ✅ GSAP/Framer Motion animation helpers
 - ✅ Blue/gray professional color palette
 
-### To Build
-- [ ] Capabilities page with filtering and matrix view
-- [ ] Individual company profile pages (4 pages)
+### Planned
+
+- [ ] Capability matrix with advanced filtering
 - [ ] Solutions by stage page
-- [ ] Industry pages (4 pages: Medical, Aerospace, Electronics, Automotive)
 - [ ] Why Work With Us page
 - [ ] RFQ form with intelligent routing
 - [ ] Resources/blog page
@@ -135,6 +146,7 @@ lib/
 ## Design System
 
 ### Color Palette
+
 - **Primary**: `#1E40AF` (Blue 800) - Precision, reliability
 - **Accent**: `#0EA5E9` (Sky 500) - Technical highlights
 - **Foreground**: `#1E293B` (Slate 800) - Main text
@@ -142,6 +154,7 @@ lib/
 - **Background**: `#FFFFFF` - Clean, professional
 
 ### Typography
+
 - Professional, technical aesthetic
 - Clear hierarchy for readability
 - Engineering-focused but accessible
@@ -179,4 +192,5 @@ lib/
 - See `CHANGELOG.md` for release notes
 
 ## License
+
 Private

@@ -27,9 +27,13 @@ export default async function CapabilityPage({ params }: { params: Promise<{ slu
         description={capability.description}
         image={capability.heroImage}
       />
-      <CapabilityOverview content={capability.overview} benefits={capability.benefits} />
+      {Boolean(capability.overview) && capability.benefits > 0 ? (
+        <CapabilityOverview content={capability.overview} benefits={capability.benefits} />
+      ) : null}
       <PartnerCompanies companies={capability.partnerCompanies} />
-      <TechnicalHighlights specs={capability.technicalSpecs} />
+      {capability.technicalSpecs.length > 0 ? (
+        <TechnicalHighlights specs={capability.technicalSpecs} />
+      ) : null}
       <RelatedCapabilities capabilities={capability.relatedCapabilities} />
       <CapabilityCTA capabilityName={capability.title} />
     </main>

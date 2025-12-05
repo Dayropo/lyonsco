@@ -2,32 +2,46 @@
 
 import type { JSX } from "react"
 import { motion } from "framer-motion"
-import { Users, Zap, ShieldCheck, DollarSign } from "lucide-react"
+import { ArrowRightCircle, Boxes, Cog, Layers3, Repeat2, Truck } from "lucide-react"
 
 const benefits = [
   {
-    id: "single-contact",
-    title: "Single Point of Contact",
-    description: "One partner managing all your manufacturing needs across multiple specialties",
-    icon: Users,
+    id: "engineering-driven-manufacturing",
+    title: "Engineering-Driven Manufacturing",
+    description:
+      "Projects led by engineering insight to align design intent with manufacturing reality.",
+    icon: Cog,
   },
   {
-    id: "faster-delivery",
-    title: "Faster Time-to-Market",
-    description: "Seamless transitions from prototype to production accelerate your timeline",
-    icon: Zap,
+    id: "prototype-to-production",
+    title: "Prototype-to-Production Support",
+    description:
+      "Support from early prototypes through full-scale production with a single partner.",
+    icon: ArrowRightCircle,
   },
   {
-    id: "consistent-quality",
-    title: "Consistent Quality",
-    description: "Unified quality standards across all partner companies",
-    icon: ShieldCheck,
+    id: "tight-tolerances",
+    title: "Tight Tolerances & Repeatability",
+    description: "Consistent, repeatable quality for parts that demand precision.",
+    icon: Repeat2,
   },
   {
-    id: "cost-effective",
-    title: "Cost Optimization",
-    description: "Right-sized solutions matching your volume and complexity requirements",
-    icon: DollarSign,
+    id: "multi-process-production",
+    title: "Multi-Process Production",
+    description: "Injection molding, machining, stamping, and more coordinated under one supplier.",
+    icon: Layers3,
+  },
+  {
+    id: "supply-chain-simplification",
+    title: "Supply-Chain Simplification",
+    description: "Fewer vendors to manage and clearer accountability across processes.",
+    icon: Boxes,
+  },
+  {
+    id: "on-time-delivery",
+    title: "Consistent On-Time Delivery",
+    description: "Reliable scheduling and logistics to keep your production on track.",
+    icon: Truck,
   },
 ]
 
@@ -66,7 +80,7 @@ export function CompaniesValueProp(): JSX.Element {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-foreground text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-            Why Work With Our Network
+            Why Manufacturers Choose Lyons Co.
           </h2>
           <p className="text-muted-foreground mx-auto mt-4 max-w-2xl text-lg">
             Leveraging the combined strengths of specialized manufacturers to serve you better
@@ -74,13 +88,13 @@ export function CompaniesValueProp(): JSX.Element {
         </motion.div>
 
         <motion.div
-          className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4"
+          className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          {benefits.map((benefit) => {
+          {benefits.map(benefit => {
             const Icon = benefit.icon
             return (
               <motion.div

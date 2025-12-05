@@ -15,7 +15,7 @@ export interface Company {
   capabilities: string[]
   industries: string[]
   certifications: Certification[]
-  equipment: Equipment[]
+  equipment?: Equipment[]
   volumeRange: VolumeRange
   leadTime: LeadTime
   materials: string[]
@@ -24,6 +24,20 @@ export interface Company {
   contactInfo: ContactInfo
   location: Location
   established: number
+  aboutSections?: CompanyAboutSection[]
+}
+
+export interface CompanyAboutSection {
+  id: string
+  title: string
+  paragraphs: string[]
+  bulletGroups?: CompanyAboutBulletGroup[]
+}
+
+export interface CompanyAboutBulletGroup {
+  id: string
+  title?: string
+  items: string[]
 }
 
 export interface Certification {
@@ -86,8 +100,8 @@ export interface ContactInfo {
 }
 
 export interface Location {
-  city: string
-  state: string
+  city?: string
+  state?: string
   country: string
   coordinates?: {
     lat: number
@@ -95,4 +109,4 @@ export interface Location {
   }
 }
 
-export type CompanySlug = 'pardev' | 'pti' | 'cgr-tech' | 'minic-precision'
+export type CompanySlug = "pardev" | "pti" | "cgr-tech" | "minic-precision"

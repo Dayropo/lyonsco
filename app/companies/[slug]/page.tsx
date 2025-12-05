@@ -34,12 +34,13 @@ export default async function CompanyPage({ params }: { params: Promise<{ slug: 
         about={company.about}
         established={company.established}
         location={company.location}
+        aboutSections={company.aboutSections}
       />
       <CompanySpecialties specialties={company.specialties} />
       <CompanyCertifications certifications={company.certifications} />
-      <CompanyEquipment equipment={company.equipment} />
+      {company.equipment && <CompanyEquipment equipment={company.equipment} />}
       <CompanyIndustries industries={company.industries} />
-      <CompanyCTA companyName={company.name} contactInfo={company.contactInfo} />
+      {/* <CompanyCTA companyName={company.name} contactInfo={company.contactInfo} /> */}
     </main>
   )
 }

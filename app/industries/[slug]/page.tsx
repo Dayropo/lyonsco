@@ -4,9 +4,11 @@ import {
   IndustryWhatWeOffer,
   IndustryProcess,
   IndustryApplications,
+  IndustryComponents,
   IndustryCTA,
 } from "@/components/industries"
 import { industries } from "@/data/industries"
+import { LIFECYCLE_STEPS } from "@/data/lifecycle"
 
 /**
  * Dynamic industry page
@@ -29,10 +31,13 @@ export default async function IndustryPage({ params }: { params: Promise<{ slug:
       {industry.whatWeOffer.length > 0 && (
         <IndustryWhatWeOffer whatWeOffer={industry.whatWeOffer} />
       )}
-      {industry.processes.length > 0 && <IndustryProcess processes={industry.processes} />}
-      {industry.applications.length > 0 && (
-        <IndustryApplications applications={industry.applications} />
+      <IndustryProcess processes={LIFECYCLE_STEPS} />
+      {industry.components && industry.components.length > 0 && (
+        <IndustryComponents components={industry.components} />
       )}
+      {/* {industry.applications.length > 0 && (
+        <IndustryApplications applications={industry.applications} />
+      )} */}
       <IndustryCTA industryName={industry.name} />
     </main>
   )

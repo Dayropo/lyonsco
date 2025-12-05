@@ -10,7 +10,7 @@ export const industries: Industry[] = [
     slug: "automotive",
     name: "Automotive",
     description:
-      "We produce high-precision plastic components for automotive manufacturers using advanced injection molding technology. Our process delivers consistent accuracy, durability and efficiency across small and large production runs.",
+      "Our team supplies complex injection-molded, machined, and stamped components engineered for the durability and repeatability required in automotive production. We deliver precision parts built to withstand demanding automotive environments and support long-term performance.",
     // heroImage:
     //   "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=2400&q=80",
     heroImage: "/images/industries/automotive.jpg",
@@ -95,13 +95,58 @@ export const industries: Industry[] = [
         description: "Electrical connectors and sensor casings",
       },
     ],
+    components: [
+      {
+        id: "automotive-machined",
+        name: "Machined Components",
+        icon: "cog",
+        components: [
+          "Engine blocks (prototype), heads, timing covers",
+          "Transmission housings, gear shafts, input/output shafts",
+          "Turbocharger housings and compressor wheels",
+          "Steering knuckles, hub assemblies",
+          "Brake system pistons, caliper brackets",
+          "Fuel rail bodies",
+          "Differential cases",
+          "Suspension components (control arms, ball joint housings)",
+        ],
+      },
+      {
+        id: "automotive-stamped",
+        name: "Stamped Components",
+        icon: "stamp",
+        components: [
+          "Body panels, brackets, reinforcement ribs",
+          "Brake backing plates",
+          "Airbag mounting brackets",
+          "Seat tracks and frame metal parts",
+          "Battery contacts and terminals",
+          "Exhaust heat shields",
+          "Spring clips and retaining plates",
+        ],
+      },
+      {
+        id: "automotive-molded",
+        name: "Injection-Molded Components",
+        icon: "droplet",
+        components: [
+          "Interior trim (dash components, vents, instrument housings)",
+          "Sensor housings",
+          "Light housings and lens carriers",
+          "Underhood fluid reservoirs and caps",
+          "Connector housings (electrical)",
+          "Air intake components",
+          "Switch bodies and control knobs",
+        ],
+      },
+    ],
   },
   {
-    id: "aviation",
-    slug: "aviation",
-    name: "Aviation",
+    id: "aerospace",
+    slug: "aerospace",
+    name: "Aerospace",
     description:
-      "Injection molding has become a key manufacturing method in aviation, offering a reliable way to create lightweight, complex and durable components in high volumes. Modern high-performance plastics and composites make it possible to replace heavier metal parts while still meeting strict safety, heat-resistance and performance standards.",
+      "Our team delivers complex injection-molded, machined, and stamped components with the precision, traceability, and reliability aerospace applications demand. We provide highly engineered parts designed to meet the exacting standards of aerospace environments—lightweight, repeatable, and mission-critical.",
     // heroImage:
     //   "https://images.unsplash.com/photo-1540962351504-03099e0a754b?auto=format&fit=crop&w=2400&q=80",
     heroImage: "/images/industries/aviation.jpg",
@@ -109,79 +154,79 @@ export const industries: Industry[] = [
     processes: [],
     applications: [
       {
-        id: "aviation-interior",
+        id: "aerospace-interior",
         name: "Interior Components",
         description:
           "Lightweight parts for overhead panels, armrests, seat elements, cockpit knobs and instrument surrounds. Designed for precision, durability and flame resistance.",
       },
       {
-        id: "aviation-brackets",
+        id: "aerospace-brackets",
         name: "Brackets and Mounts",
         description:
           "Strong, low-weight supports for electrical, hydraulic and mechanical systems. Built to handle vibration, stress and high temperatures.",
       },
       {
-        id: "aviation-cable",
+        id: "aerospace-cable",
         name: "Cable Clamps and Fasteners",
         description:
           "Accurate, robust clips, connectors and clamps used for routing wires and tubes. Helps reduce overall aircraft weight while maintaining reliability.",
       },
       {
-        id: "aviation-electronic",
+        id: "aerospace-electronic",
         name: "Electronic Housings",
         description:
           "Protective casings for sensors, control units and navigation electronics. Engineered for insulation, environmental protection and electromagnetic resistance.",
       },
       {
-        id: "aviation-composite",
+        id: "aerospace-composite",
         name: "Composite Structural Pieces",
         description:
           "Lightweight reinforcements such as ribs, spars and panel components that support better fuel economy and overall aircraft efficiency.",
       },
       {
-        id: "aviation-ducts",
+        id: "aerospace-ducts",
         name: "Ducts and Vents",
         description:
           "Intricate air-management parts for HVAC systems, ensuring proper airflow and cabin temperature control.",
       },
       {
-        id: "aviation-grommets",
+        id: "aerospace-grommets",
         name: "Grommets and Seals",
         description:
           "Specialized components designed to block dust, moisture and air leaks. Some versions absorb vibration and support long-term system stability.",
       },
       {
-        id: "aviation-switches",
+        id: "aerospace-switches",
         name: "Switches and Buttons",
         description:
           "Durable controls for cockpit and cabin panels with precise tactile performance.",
       },
       {
-        id: "aviation-lighting",
+        id: "aerospace-lighting",
         name: "Lighting Components",
         description:
           "Housings for interior lights, navigation lights and landing lights, made from materials that withstand heat and environmental exposure.",
       },
       {
-        id: "aviation-bumpers",
+        id: "aerospace-bumpers",
         name: "Bumpers and Pads",
         description:
           "Protective elements for cargo areas and compartments, helping reduce noise and prevent damage.",
       },
       {
-        id: "aviation-insulation",
+        id: "aerospace-insulation",
         name: "Insulation Panels",
         description:
           "Lightweight thermal and acoustic panels made from advanced fire-resistant polymers.",
       },
       {
-        id: "aviation-fuel",
+        id: "aerospace-fuel",
         name: "Fuel System Components",
         description:
           "Seals, caps and fittings designed to resist fuel exposure and maintain secure pressure levels.",
       },
       {
-        id: "aviation-landing",
+        id: "aerospace-landing",
         name: "Landing Gear Covers",
         description:
           "Streamlined, impact-resistant covers that reduce drag and shield landing gear assemblies.",
@@ -237,13 +282,56 @@ export const industries: Industry[] = [
     ],
     processes: [],
     applications: [],
+    components: [
+      {
+        id: "electronics-machined",
+        name: "Machined Components",
+        icon: "cog",
+        components: [
+          "Connector housings (metal)",
+          "Heat sinks",
+          "RF/microwave housings",
+          "Switch bodies",
+          "Precision sensor housings",
+          "Enclosure frames",
+        ],
+      },
+      {
+        id: "electronics-stamped",
+        name: "Stamped Components",
+        icon: "stamp",
+        components: [
+          "EMI/RFI shielding",
+          "Terminal connectors",
+          "Contact springs",
+          "Bus bars",
+          "Fuse clips",
+          "Battery tabs",
+          "Lead frames",
+        ],
+      },
+      {
+        id: "electronics-molded",
+        name: "Injection-Molded Components",
+        icon: "droplet",
+        components: [
+          "Connector housings",
+          "Switch housings",
+          "Insulators",
+          "Cable management clips",
+          "PCB enclosures",
+          "Light fixture housings",
+          "Power tool housings",
+        ],
+      },
+    ],
   },
   {
     id: "medical",
     slug: "medical",
     name: "Medical",
     description:
-      "We support the medical sector with precise, reliable and efficient plastic injection molding built for demanding clinical applications. With decades of experience, we produce components that meet strict regulatory, performance and safety requirements while enabling flexible, innovative part design.",
+      "Our team produces complex injection-molded, machined, and stamped components with the quality, cleanliness, and consistency required for medical devices. We support medical OEMs with precision components manufactured to tight tolerances and validated for reliability in life-critical applications.",
     // heroImage:
     //   "https://images.unsplash.com/photo-1581093458791-9d42e1c5e2e4?auto=format&fit=crop&w=2400&q=80",
     heroImage: "/images/industries/medical.jpg",
@@ -312,13 +400,54 @@ export const industries: Industry[] = [
         description: "Laboratory, organ and cell-growth equipment",
       },
     ],
+    components: [
+      {
+        id: "medical-machined",
+        name: "Machined Components",
+        icon: "cog",
+        components: [
+          "Surgical instrument housings and handles",
+          "Orthopedic implant components (bone plates, screws — specialized machining)",
+          "Pump housings (infusion, dialysis)",
+          "Robotic surgery parts",
+          "Precision valve bodies",
+          "Imaging system mounts and brackets",
+        ],
+      },
+      {
+        id: "medical-stamped",
+        name: "Stamped Components",
+        icon: "stamp",
+        components: [
+          "Stainless contact springs",
+          "Battery terminals for medical devices",
+          "Shielding plates for diagnostic electronics",
+          "Disposable clip mechanisms",
+          "Stainless enclosure components",
+        ],
+      },
+      {
+        id: "medical-molded",
+        name: "Injection-Molded Components",
+        icon: "droplet",
+        components: [
+          "Syringe bodies and caps",
+          "Inhaler components",
+          "Diagnostic cartridge housings",
+          "Surgical device handles and housings",
+          "Catheter hubs and connectors",
+          "Blood and IV line components",
+          "Point-of-care test device shells",
+        ],
+      },
+    ],
   },
   {
     id: "military",
     slug: "military",
     name: "Military",
     description:
-      "We produce lightweight, durable and highly engineered plastic components tailored to the strict demands of military and aerospace programs. Our team handles complex, low- to high-volume injection molding with the precision and reliability that mission-critical environments require.",
+      "Our team delivers mission-ready injection-molded, machined, and stamped components with the durability and reliability required in defense environments. We support defense programs with precision components engineered for extreme conditions and consistent mission-critical performance.",
     // heroImage:
     //   "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=2400&q=80",
     heroImage: "/images/industries/military.jpg",
@@ -369,6 +498,49 @@ export const industries: Industry[] = [
       {
         id: "military-connectors",
         description: "High-strength connectors, brackets and mounts",
+      },
+    ],
+    components: [
+      {
+        id: "military-machined",
+        name: "Machined Components",
+        icon: "cog",
+        components: [
+          "Weapon system components (non-restricted: mounts, brackets, housings)",
+          "Optics housings",
+          "Ruggedized electronics enclosures",
+          "Aerospace-grade brackets and fittings",
+          "Actuator housings",
+          "Missile and munition support components (non-sensitive: machined shells, interface parts)",
+          "Radar and communication housings",
+        ],
+      },
+      {
+        id: "military-stamped",
+        name: "Stamped Components",
+        icon: "stamp",
+        components: [
+          "Shielding plates",
+          "Reinforcement brackets",
+          "Spring clips",
+          "Chassis components",
+          "Heat shields",
+          "Electrical contact plates",
+        ],
+      },
+      {
+        id: "military-molded",
+        name: "Injection-Molded Components",
+        icon: "droplet",
+        components: [
+          "Ruggedized connector housings",
+          "Helmet components",
+          "Radio and communications housings",
+          "Weapon accessory housings (rails, grips — non-restricted)",
+          "Field device enclosures",
+          "Protective caps and covers",
+          "Chemical- and impact-resistant equipment cases",
+        ],
       },
     ],
   },
