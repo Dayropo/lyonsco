@@ -22,11 +22,11 @@ const industries: Industry[] = [
     slug: "automotive",
   },
   {
-    id: "aviation",
-    name: "Aviation",
+    id: "aerospace",
+    name: "Aerospace",
     description: "High-reliability parts for aerospace applications",
     icon: <Plane className="h-8 w-8" />,
-    slug: "aviation",
+    slug: "aerospace",
   },
   {
     id: "electronics",
