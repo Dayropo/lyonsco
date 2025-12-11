@@ -2,8 +2,8 @@
 
 import type { JSX } from "react"
 import { motion } from "framer-motion"
-import { Mail, Phone, MapPin, Clock } from "lucide-react"
-import { CONTACT_EMAIL, CONTACT_PHONE, COMPANY_ADDRESS } from "@/lib/constants"
+import { Mail, Phone, MapPin, User } from "lucide-react"
+import { CONTACT_EMAIL, CONTACT_PHONE, COMPANY_ADDRESS, CONTACT_NAME } from "@/lib/constants"
 
 const contactItems = [
   {
@@ -18,22 +18,16 @@ const contactItems = [
     icon: Phone,
     label: "Phone",
     value: CONTACT_PHONE,
+    contact: CONTACT_NAME,
     href: `tel:${CONTACT_PHONE}`,
   },
   {
     id: "address",
     icon: MapPin,
-    label: "Address",
+    label: "Location",
     //value: `${COMPANY_ADDRESS.street}, ${COMPANY_ADDRESS.city}, ${COMPANY_ADDRESS.state} ${COMPANY_ADDRESS.zip}`,
-    value: "",
-    href: null,
-  },
-  {
-    id: "hours",
-    icon: Clock,
-    label: "Business Hours",
-    value: "Monday – Friday, 8:00 AM to 5:00 PM",
-    href: null,
+    value: `${COMPANY_ADDRESS.city}, ${COMPANY_ADDRESS.state}`,
+    href: `https://maps.google.com/?q=${encodeURIComponent(`${COMPANY_ADDRESS.city}, ${COMPANY_ADDRESS.state}`)}`,
   },
 ]
 
@@ -80,13 +74,13 @@ export function ContactInfo(): JSX.Element {
         </motion.div>
 
         <motion.div
-          className="mx-auto mt-16 max-w-4xl"
+          className="mx-auto mt-16 max-w-5xl"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          <div className="grid gap-6 sm:grid-cols-2">
+          <div className="grid auto-rows-fr gap-6 sm:grid-cols-3">
             {contactItems.map(item => {
               const Icon = item.icon
               const content = (
@@ -96,6 +90,11 @@ export function ContactInfo(): JSX.Element {
                   </div>
                   <h3 className="text-card-foreground mb-2 text-lg font-semibold">{item.label}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">{item.value}</p>
+                  {item.contact && (
+                    <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
+                      {item.contact}
+                    </p>
+                  )}
                 </>
               )
 
@@ -104,12 +103,12 @@ export function ContactInfo(): JSX.Element {
                   {item.href ? (
                     <a
                       href={item.href}
-                      className="border-border bg-card hover:border-secondary/50 block rounded-lg border p-6 shadow-sm transition-all hover:shadow-md"
+                      className="border-border bg-card hover:border-secondary/50 flex h-full flex-col rounded-lg border p-6 shadow-sm transition-all hover:shadow-md"
                     >
                       {content}
                     </a>
                   ) : (
-                    <div className="border-border bg-card rounded-lg border p-6 shadow-sm">
+                    <div className="border-border bg-card flex h-full flex-col rounded-lg border p-6 shadow-sm">
                       {content}
                     </div>
                   )}

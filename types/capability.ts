@@ -24,12 +24,12 @@ export interface Capability {
 }
 
 export type CapabilityCategory =
-  | 'prototyping'
-  | 'machining'
-  | 'molding'
-  | 'finishing'
-  | 'assembly'
-  | 'inspection'
+  | "prototyping"
+  | "machining"
+  | "molding"
+  | "finishing"
+  | "assembly"
+  | "inspection"
 
 export interface CapabilityFilter {
   stage?: ProductionStage[]
@@ -41,12 +41,7 @@ export interface CapabilityFilter {
   search?: string
 }
 
-export type ProductionStage =
-  | 'concept'
-  | 'prototype'
-  | 'low-volume'
-  | 'high-volume'
-  | 'production'
+export type ProductionStage = "concept" | "prototype" | "low-volume" | "high-volume" | "production"
 
 export interface VolumeFilter {
   min?: number

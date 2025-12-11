@@ -165,6 +165,39 @@ export const companies: Company[] = [
           // "Cycle Time": "10-60 seconds",
         },
       },
+      {
+        id: "prototype-injection-molding",
+        name: "Prototype Injection Molding",
+        type: "Rapid Prototyping",
+        capabilities: [
+          "Fast turnaround prototypes",
+          "Design validation",
+          "Functional testing",
+          "Small batch production",
+        ],
+        specifications: {
+          "Lead Time": "3-5 days",
+          "Batch Size": "10-100 units",
+          Tolerance: "±0.002 in",
+        },
+      },
+      {
+        id: "design-for-manufacturing",
+        name: "Design for Manufacturing",
+        type: "Engineering Services",
+        capabilities: [
+          "Design optimization",
+          "Cost reduction analysis",
+          "Material selection",
+          "Manufacturability review",
+          "DFM consultation",
+        ],
+        specifications: {
+          "Service Type": "Engineering Support",
+          Expertise: "Injection Molding & Tooling",
+          Availability: "Full-time support",
+        },
+      },
     ],
     volumeRange: {
       min: 1000,

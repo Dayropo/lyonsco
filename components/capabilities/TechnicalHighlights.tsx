@@ -2,7 +2,7 @@
 
 import type { JSX } from "react"
 import { motion } from "framer-motion"
-import { Ruler, Box, Layers, Clock } from "lucide-react"
+import { Ruler, Box, Layers, Cog } from "lucide-react"
 
 interface TechnicalSpec {
   readonly icon: string
@@ -19,7 +19,7 @@ const iconMap: Record<string, any> = {
   ruler: Ruler,
   box: Box,
   layers: Layers,
-  clock: Clock,
+  cog: Cog,
 }
 
 const containerVariants = {

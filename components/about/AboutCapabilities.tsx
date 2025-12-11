@@ -83,6 +83,13 @@ const capabilities = [
     description: "From prototypes to full-volume manufacturing, supporting growth at every stage",
     icon: BarChart3,
   },
+  {
+    id: "design-manufacturing",
+    name: "Design for Manufacturing (DFM)",
+    description:
+      "We help design parts and products for easier, more efficient manufacturing—resulting in better quality at lower cost.",
+    icon: Cog,
+  },
 ]
 
 const containerVariants = {

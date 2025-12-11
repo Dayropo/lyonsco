@@ -17,7 +17,7 @@ interface CompanyHeroProps {
  */
 export function CompanyHero({ name, tagline, description, heroImage, logo }: CompanyHeroProps): JSX.Element {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden -mt-[68px] pt-[68px] sm:-mt-[100px] sm:pt-[100px]">
       <div className="absolute inset-0 z-0">
         <Image src={heroImage} alt={name} fill priority sizes="100vw" className="object-cover" />
         <div className="from-primary/90 via-primary/75 to-primary/60 absolute inset-0 bg-gradient-to-r" />

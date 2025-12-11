@@ -8,9 +8,10 @@ import { motion } from "framer-motion"
  */
 export function CompaniesHero(): JSX.Element {
   return (
-    <section className="bg-primary relative overflow-hidden px-6 py-24 sm:py-32">
+    <section className="bg-primary relative -mt-[68px] min-h-[60vh] overflow-hidden pt-[68px] sm:-mt-[100px] sm:pt-[100px]">
       <div className="absolute inset-0 bg-[url('/images/cnc.webp')] bg-cover bg-center opacity-20" />
-      <div className="relative z-10 mx-auto max-w-4xl text-center">
+
+      <div className="relative z-10 mx-auto flex flex-col max-w-4xl items-center px-6 py-24">
         <motion.h1
           className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl"
           initial={{ opacity: 0, y: 20 }}

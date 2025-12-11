@@ -55,7 +55,7 @@ export const capabilities: Record<string, any> = {
       {
         icon: "layers",
         label: "Processes",
-        value: "6+ Types",
+        value: "Multiple",
         description: "Standard, insert, two-shot, cleanroom, micro, and overmolding",
       },
       {
@@ -139,13 +139,13 @@ export const capabilities: Record<string, any> = {
       {
         icon: "layers",
         label: "Processes",
-        value: "5+ Types",
+        value: "Multiple",
         description: "Progressive, multislide, deep draw, prototype, and fine blanking",
       },
       {
         icon: "clock",
         label: "Materials",
-        value: "10+ Metals",
+        value: "Diverse Range",
         description: "Common to exotic metals and alloys",
       },
     ],
@@ -204,39 +204,41 @@ export const capabilities: Record<string, any> = {
         id: "cgr",
         name: "CGR Technologies",
         logo: "/images/companies/cgr-logo.webp",
-        href: "/companies/cgr",
+        href: "/companies/cgr-tech",
       },
       {
         id: "pardev",
         name: "Paradigm Development Group Inc.",
         logo: "/images/companies/pardev-logo.webp",
         href: "/companies/pardev",
+        tags: ["Prototype", "Low Volume CNC"],
       },
     ],
     technicalSpecs: [
       {
         icon: "ruler",
         label: "Work Envelope",
-        value: '45×25×20"',
-        description: "Large capacity for various part sizes",
+        value: '9.9" Diameter',
+        description: "Work envelope up to 9.9 inch Diameter",
       },
       {
         icon: "box",
         label: "Tolerance",
-        value: '±0.001"',
-        description: "Precision machining with 100% inspection",
+        value: '±0.00005"',
+        description: "Close tolerance machining to 50 millionths of an inch (.0013mm) ",
       },
       {
         icon: "layers",
         label: "Materials",
-        value: "15+ Types",
-        description: "Metals, plastics, ceramics, and exotic alloys",
+        value: "Diverse Range",
+        description:
+          "Stainless Steels , Inconel, Titanium, OFHC Copper, Nickel 200, and many other exotic materials",
       },
       {
-        icon: "clock",
-        label: "Lead Time",
-        value: "3+ Days",
-        description: "Fast turnaround for prototypes and production",
+        icon: "cog",
+        label: "Processes",
+        value: "4 Processes",
+        description: "Hard Turning, Grinding, Lapping, Milling",
       },
     ],
     relatedCapabilities: [
@@ -346,10 +348,8 @@ export const capabilities: Record<string, any> = {
     description: "",
     heroImage: "/images/capabilities/screw-machining.webp",
     overview: {
-      intro:
-        "",
-      details:
-        "",
+      intro: "",
+      details: "",
     },
     benefits: [
       // {
@@ -403,7 +403,7 @@ export const capabilities: Record<string, any> = {
       {
         icon: "clock",
         label: "Materials",
-        value: "10+ Metals",
+        value: "Diverse Range",
         description: "Common to exotic metals and alloys",
       },
     ],
@@ -430,10 +430,8 @@ export const capabilities: Record<string, any> = {
     description: "",
     heroImage: "/images/capabilities/urethane-silicone-casting.webp",
     overview: {
-      intro:
-        "",
-      details:
-        "",
+      intro: "",
+      details: "",
     },
     benefits: [
       // {
@@ -508,5 +506,5 @@ export const capabilities: Record<string, any> = {
         description: "Precision plastic injection molding services",
       },
     ],
-  }
+  },
 }

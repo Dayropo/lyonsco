@@ -11,6 +11,7 @@ interface PartnerCompany {
   readonly name: string
   readonly logo?: string
   readonly href: string
+  readonly tags?: readonly string[]
 }
 
 interface PartnerCompaniesProps {
@@ -50,26 +51,30 @@ export function PartnerCompanies({ companies }: PartnerCompaniesProps): JSX.Elem
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          <h2 className="text-foreground text-3xl font-bold tracking-tight sm:text-4xl">
             Our Partner Companies
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+          <p className="text-muted-foreground mx-auto mt-4 max-w-2xl text-lg">
             Specialized manufacturing partners with proven expertise
           </p>
         </motion.div>
 
         <motion.div
-          className="mt-16 flex flex-wrap items-center justify-center gap-8"
+          className="mt-16 flex flex-wrap items-start justify-center gap-8"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
           {companies.map(company => (
-            <motion.div key={company.id} variants={cardVariants}>
+            <motion.div
+              key={company.id}
+              variants={cardVariants}
+              className="flex flex-col items-center"
+            >
               <Link
                 href={company.href}
-                className="group block rounded-xl border border-border bg-card p-8 shadow-sm transition-all hover:shadow-md"
+                className="group border-border bg-card block rounded-xl border p-8 shadow-sm transition-all hover:shadow-md"
               >
                 <div className="flex flex-col items-center gap-4">
                   {company.logo ? (
@@ -82,12 +87,24 @@ export function PartnerCompanies({ companies }: PartnerCompaniesProps): JSX.Elem
                       />
                     </div>
                   ) : (
-                    <h3 className="text-xl font-bold text-card-foreground transition-colors group-hover:text-secondary">
+                    <h3 className="text-card-foreground group-hover:text-secondary text-xl font-bold transition-colors">
                       {company.name}
                     </h3>
                   )}
                 </div>
               </Link>
+              {company.tags && company.tags.length > 0 && (
+                <div className="mt-4 flex flex-wrap justify-center gap-2">
+                  {company.tags.map(tag => (
+                    <span
+                      key={tag}
+                      className="bg-secondary text-secondary-foreground inline-block rounded-full px-3 py-1 text-xs font-medium"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
             </motion.div>
           ))}
         </motion.div>
@@ -105,7 +122,7 @@ export function PartnerCompanies({ companies }: PartnerCompaniesProps): JSX.Elem
           </p>
           <Link
             href="/companies"
-            className="mt-4 inline-flex items-center gap-2 rounded-lg bg-secondary px-6 py-3 text-sm font-semibold text-secondary-foreground transition-all hover:bg-secondary/90 hover:shadow-lg"
+            className="bg-secondary text-secondary-foreground hover:bg-secondary/90 mt-4 inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold transition-all hover:shadow-lg"
           >
             View All Companies
             <ArrowRight className="h-4 w-4" />

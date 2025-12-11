@@ -51,7 +51,7 @@ const capabilities: Capability[] = [
     description:
       "Turning, milling, grinding, and multi-axis CNC machining for precision components with complex geometries and tight tolerances.",
     focus: "Complex parts and challenging materials.",
-    slug: "machining",
+    slug: "cnc-machining",
     icon: <Cog className="h-12 w-12" />,
   },
   {
