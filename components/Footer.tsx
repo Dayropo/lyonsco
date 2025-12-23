@@ -139,7 +139,7 @@ export function Footer(): JSX.Element {
 
                 {/* Phone */}
                 <div className="flex gap-3">
-                  <Phone className="text-secondary mt-0.5 h-5 w-5 flex-shrink-0" />
+                  <Phone className="text-secondary mt-0.5 h-5 w-5 shrink-0" />
                   <a
                     href={`tel:${CONTACT_PHONE_RAW}`}
                     className="hover:text-secondary text-sm text-[#ECF0F1] transition-colors"
@@ -150,7 +150,7 @@ export function Footer(): JSX.Element {
 
                 {/* Email */}
                 <div className="flex gap-3">
-                  <Mail className="text-secondary mt-0.5 h-5 w-5 flex-shrink-0" />
+                  <Mail className="text-secondary mt-0.5 h-5 w-5 shrink-0" />
                   <a
                     href={`mailto:${CONTACT_EMAIL}`}
                     className="hover:text-secondary text-sm text-[#ECF0F1] transition-colors"
@@ -180,7 +180,7 @@ export function Footer(): JSX.Element {
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <p className="text-sm text-[#95A5A6]">
-              &copy; {currentYear} {SITE_NAME}. All rights reserved.
+              &copy; {currentYear} {SITE_NAME} All rights reserved.
             </p>
             <div className="flex gap-6">
               <Link

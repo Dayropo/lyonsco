@@ -22,7 +22,7 @@ export default function AboutPage() {
 }
 
 export const metadata = {
-  title: "About Us - Lyons Co.",
+  title: "About Us - Lyons Company Inc.",
   description:
-    "Lyons Co. is a precision manufacturing partner with more than 30 years of experience supporting companies through every stage of product development.",
+    "Lyons Company Inc. is a precision manufacturing partner with more than 30 years of experience supporting companies through every stage of product development.",
 }

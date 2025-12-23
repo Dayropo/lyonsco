@@ -147,7 +147,7 @@ export function TimelineSection(): JSX.Element {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Our Process
+          Our Processes
         </motion.h3>
         <motion.div
           className="relative mt-12"
@@ -156,25 +156,29 @@ export function TimelineSection(): JSX.Element {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-5 md:gap-6 lg:grid-cols-9">
-            {stages.map((stage, index) => (
-              <motion.div key={stage.id} className="timeline-item relative" variants={itemVariants}>
-                <div className="flex flex-col items-center text-center">
-                  <div className="bg-secondary text-secondary-foreground relative z-10 flex h-20 w-20 items-center justify-center rounded-full shadow-lg">
-                    {stage.icon}
+          <div className="relative">
+            <div className="bg-border/60 pointer-events-none absolute inset-x-4 top-9 hidden h-px md:block" />
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4">
+              {stages.map((stage, index) => (
+                <motion.div
+                  key={stage.id}
+                  className="bg-background/80 relative flex h-full flex-col rounded-xl border p-6 text-left shadow-sm"
+                  variants={itemVariants}
+                >
+                  <div className="mt-4 flex items-start gap-3">
+                    <div className="text-primary mt-1 hidden md:block">{stage.icon}</div>
+                    <div>
+                      <h3 className="text-foreground text-base leading-snug font-semibold">
+                        {stage.name}
+                      </h3>
+                      <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
+                        {stage.description}
+                      </p>
+                    </div>
                   </div>
-                  <div className="mt-4">
-                    <h3 className="text-foreground text-lg font-semibold">{stage.name}</h3>
-                    {/* <p className="text-muted-foreground mt-2 text-sm">{stage.description}</p> */}
-                    {/* <p className="text-secondary mt-3 text-xs font-medium">{stage.company}</p> */}
-                  </div>
-                </div>
-                {index < stages.length - 1 && (
-                  // <div className="bg-border mx-auto mt-4 h-8 w-0.5 md:hidden" />
-                  <div className="bg-secondary/40 absolute top-1/3 left-1/2 hidden h-[2px] w-full max-w-[80px] translate-x-[40px] -translate-y-1/2 lg:block" />
-                )}
-              </motion.div>
-            ))}
+                </motion.div>
+              ))}
+            </div>
           </div>
         </motion.div>
       </div>

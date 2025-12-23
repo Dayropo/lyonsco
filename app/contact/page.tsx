@@ -14,7 +14,7 @@ export default function ContactPage() {
 }
 
 export const metadata = {
-  title: "Contact Us - Lyons Co.",
+  title: "Contact Us - Lyons Company Inc.",
   description:
-    "Get in touch with Lyons Co. for precision manufacturing solutions. Request a consultation or quote for your project.",
+    "Get in touch with Lyons Company Inc. for precision manufacturing solutions. Request a consultation or quote for your project.",
 }

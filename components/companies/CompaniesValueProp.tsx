@@ -80,7 +80,7 @@ export function CompaniesValueProp(): JSX.Element {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-foreground text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-            Why Manufacturers Choose Lyons Co.
+            Why Manufacturers Choose Lyons Company Inc.
           </h2>
           <p className="text-muted-foreground mx-auto mt-4 max-w-2xl text-lg">
             Leveraging the combined strengths of specialized manufacturers to serve you better

@@ -21,10 +21,10 @@ export function AboutStory(): JSX.Element {
           </h2>
           <div className="text-muted-foreground mt-8 space-y-6 text-lg leading-relaxed">
             <p>
-              Lyons Co. is a precision manufacturing partner with more than 30 years of experience
-              supporting companies through every stage of product development. From early prototypes
-              to full-scale production, we help bring ideas to life with accuracy, speed and
-              dependable engineering expertise.
+              Lyons Company Inc. is a precision manufacturing partner with more than 30 years of
+              experience supporting companies through every stage of product development. From early
+              prototypes to full-scale production, we help bring ideas to life with accuracy, speed
+              and dependable engineering expertise.
             </p>
             <p>
               Our team works closely with clients across multiple industries, delivering components

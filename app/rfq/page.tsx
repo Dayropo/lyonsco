@@ -14,7 +14,7 @@ export default function RFQPage() {
 }
 
 export const metadata = {
-  title: "Request a Quote - Lyons Co.",
+  title: "Request a Quote - Lyons Company Inc.",
   description:
     "Request a quote for your precision manufacturing project. Tell us about your design, materials and production goals.",
 }

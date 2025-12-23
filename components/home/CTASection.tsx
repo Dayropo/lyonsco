@@ -14,7 +14,7 @@ export function CTASection(): JSX.Element {
     <section className="px-6 py-20 sm:py-28">
       <div className="mx-auto max-w-4xl">
         <motion.div
-          className="rounded-2xl border border-border bg-gradient-to-br from-primary to-accent p-8 shadow-xl sm:p-12"
+          className="rounded-2xl border border-border bg-linear-to-br from-primary to-accent p-8 shadow-xl sm:p-12"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}

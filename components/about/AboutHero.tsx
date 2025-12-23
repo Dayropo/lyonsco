@@ -17,7 +17,7 @@ export function AboutHero(): JSX.Element {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            About Lyons Co.
+            About Lyons Company Inc.
           </motion.h1>
           <motion.p
             className="mx-auto mt-6 max-w-3xl text-lg text-slate-200 sm:text-xl"

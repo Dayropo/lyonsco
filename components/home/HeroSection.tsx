@@ -49,7 +49,7 @@ export function HeroSection() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="from-primary/90 via-primary/75 to-primary/45 absolute inset-0 bg-gradient-to-r" />
+        <div className="from-primary/90 via-primary/75 to-primary/45 absolute inset-0 bg-linear-to-r" />
       </div>
       <div className="relative z-10 flex min-h-[inherit] items-center px-6 py-24 sm:py-32">
         <motion.div
