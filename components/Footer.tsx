@@ -36,6 +36,7 @@ export function Footer(): JSX.Element {
     { label: "Screw Machining", href: "/capabilities/screw-machining" },
     { label: "Urethane/Silicone Casting", href: "/capabilities/urethane-silicone-casting" },
     { label: "Stereolithography", href: "/capabilities/stereolithography" },
+    { label: "Deep Draw Stamping", href: "/capabilities/deep-draw-stamping" },
   ]
 
   return (
@@ -182,7 +183,7 @@ export function Footer(): JSX.Element {
             <p className="text-sm text-[#95A5A6]">
               &copy; {currentYear} {SITE_NAME} All rights reserved.
             </p>
-            <div className="flex gap-6">
+            {/* <div className="flex gap-6">
               <Link
                 href="/privacy"
                 className="hover:text-secondary text-sm text-[#95A5A6] transition-colors"
@@ -201,7 +202,7 @@ export function Footer(): JSX.Element {
               >
                 Sitemap
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

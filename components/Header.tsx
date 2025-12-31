@@ -60,6 +60,10 @@ const capabilities: readonly CapabilityItem[] = [
     title: "Stereolithography (SLA)",
     href: "/capabilities/stereolithography",
   },
+  {
+    title: "Deep Draw Stamping",
+    href: "/capabilities/deep-draw-stamping",
+  },
 ]
 
 const industries: readonly IndustryItem[] = [

@@ -49,14 +49,18 @@ export function CompaniesOverview(): JSX.Element {
           </p>
         </motion.div>
         <motion.div
-          className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4"
+          className="mt-16 flex flex-wrap justify-center gap-6"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
           {companies.map(company => (
-            <motion.div key={company.id} variants={cardVariants}>
+            <motion.div
+              key={company.id}
+              variants={cardVariants}
+              className="w-full md:w-[calc(50%-12px)] lg:w-[calc(25%-18px)]"
+            >
               <Link href={`/companies/${company.slug}`} className="group block h-full">
                 <div className="border-border bg-card flex h-full flex-col rounded-xl border p-6 shadow-sm transition-all hover:shadow-lg">
                   <div className="flex-1">

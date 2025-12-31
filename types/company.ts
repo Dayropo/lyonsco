@@ -16,11 +16,11 @@ export interface Company {
   industries: string[]
   certifications: Certification[]
   equipment?: Equipment[]
-  volumeRange: VolumeRange
-  leadTime: LeadTime
-  materials: string[]
-  processes: string[]
-  caseStudies: CaseStudy[]
+  volumeRange?: VolumeRange
+  leadTime?: LeadTime
+  materials?: string[]
+  processes?: string[]
+  caseStudies?: CaseStudy[]
   contactInfo: ContactInfo
   location: Location
   established: number

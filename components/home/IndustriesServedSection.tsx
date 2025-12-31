@@ -96,14 +96,18 @@ export function IndustriesServedSection(): JSX.Element {
           </p>
         </motion.div>
         <motion.div
-          className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-5"
+          className="mt-16 flex flex-wrap justify-center gap-5"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
           {industries.map(industry => (
-            <motion.div key={industry.id} variants={cardVariants}>
+            <motion.div
+              key={industry.id}
+              variants={cardVariants}
+              className="w-full sm:w-[calc(50%-10px)] lg:w-[calc(20%-16px)]"
+            >
               <Link href={`/industries/${industry.slug}`} className="group block h-full">
                 <div className="border-border bg-card flex h-full flex-col rounded-lg border p-6 shadow-sm transition-all hover:shadow-md">
                   <div className="bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-secondary-foreground flex h-12 w-12 items-center justify-center rounded-lg transition-colors">

@@ -234,12 +234,12 @@ export const capabilities: Record<string, any> = {
         description:
           "Stainless Steels , Inconel, Titanium, OFHC Copper, Nickel 200, and many other exotic materials",
       },
-      {
-        icon: "cog",
-        label: "Processes",
-        value: "4 Processes",
-        description: "Hard Turning, Grinding, Lapping, Milling",
-      },
+      // {
+      //   icon: "cog",
+      //   label: "Processes",
+      //   value: "4 Processes",
+      //   description: "Hard Turning, Grinding, Lapping, Milling",
+      // },
     ],
     relatedCapabilities: [
       {
@@ -499,6 +499,62 @@ export const capabilities: Record<string, any> = {
         title: "Urethane Casting",
         href: "/capabilities/urethane-silicone-casting",
         description: "Low-volume production and prototyping",
+      },
+      {
+        title: "Injection Molding",
+        href: "/capabilities/injection-molding",
+        description: "Precision plastic injection molding services",
+      },
+    ],
+  },
+  "deep-draw-stamping": {
+    title: "Deep Draw Stamping",
+    description: "Complex formed components with superior structural integrity",
+    heroImage: "/images/capabilities/deep-draw-stamping.webp",
+    partnerCompanies: [
+      {
+        id: "carby",
+        name: "Carby Corporation",
+        logo: "/images/companies/carby-logo.webp",
+        href: "/companies/carby",
+      },
+    ],
+    technicalSpecs: [
+      {
+        icon: "ruler",
+        label: "Accuracy",
+        value: '±0.00005"',
+        description: "Ultra-precision tolerances up to 0.00127mm",
+      },
+      {
+        icon: "box",
+        label: "Draw Lengths",
+        value: 'Up to 3.125"',
+        description: "Draw lengths up to 79.4mm with high depth-to-diameter ratios",
+      },
+      {
+        icon: "layers",
+        label: "Materials",
+        value: "6+ Options",
+        description: "Stainless steel, copper, gold, silver, brass, and nickel",
+      },
+      {
+        icon: "cog",
+        label: "Process",
+        value: "Multi-Stage",
+        description: "Advanced deep draw stamping with ratios exceeding 50:1",
+      },
+    ],
+    relatedCapabilities: [
+      {
+        title: "Metal Stamping",
+        href: "/capabilities/metal-stamping",
+        description: "Precision metal stamping and forming",
+      },
+      {
+        title: "CNC Machining",
+        href: "/capabilities/cnc-machining",
+        description: "Precision machining for prototypes and production",
       },
       {
         title: "Injection Molding",

@@ -21,7 +21,7 @@ interface Capability {
   id: string
   name: string
   description: string
-  focus: string
+  focus?: string
   slug: string
   icon: JSX.Element
 }
@@ -85,8 +85,16 @@ const capabilities: Capability[] = [
     name: "Prototype Machining",
     description: "Low-volume, proof-of-concept, and early-stage production support.",
     focus: "Rapid market entry and proof of concept.",
-    slug: "prototype-machining",
+    slug: "cnc-machining",
     icon: <Lightbulb className="h-12 w-12" />,
+  },
+  {
+    id: "deep-draw-stamping",
+    name: "Deep Draw Stamping",
+    description: "Complex formed components with superior structural integrity",
+    // focus: "Low-volume, high-mix production.",
+    slug: "deep-draw-stamping",
+    icon: <Stamp className="h-12 w-12" />,
   },
 ]
 
@@ -148,7 +156,7 @@ export function CapabilitiesSection(): JSX.Element {
           </motion.div>
 
           <motion.div
-            className="mt-16 grid grid-cols-2 gap-6 sm:grid-cols-3"
+            className="mt-16 flex flex-wrap justify-center gap-6"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
@@ -158,7 +166,7 @@ export function CapabilitiesSection(): JSX.Element {
               <motion.div
                 key={capability.id}
                 variants={cardVariants}
-                className="sm:[&:last-child:nth-child(3n+1)]:col-start-2"
+                className="w-[calc(50%-12px)] sm:w-[calc(33.333333%-16px)]"
               >
                 <div className="group relative h-full">
                   {/* Default State - White Card */}
@@ -174,10 +182,14 @@ export function CapabilitiesSection(): JSX.Element {
                     href={`/capabilities/${capability.slug}`}
                     className="border-accent bg-primary/95 absolute inset-0 hidden flex-col items-center justify-center rounded-lg border p-6 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 sm:flex"
                   >
-                    <p className="text-sm leading-relaxed text-white line-clamp-4 lg:line-clamp-none">{capability.description}</p>
-                    <p className="mt-3 text-xs font-medium text-[#F1C40F] italic hidden lg:block">
-                      Focus: {capability.focus}
+                    <p className="line-clamp-4 text-sm leading-relaxed text-white lg:line-clamp-none">
+                      {capability.description}
                     </p>
+                    {capability.focus && (
+                      <p className="mt-3 hidden text-xs font-medium text-[#F1C40F] italic lg:block">
+                        Focus: {capability.focus}
+                      </p>
+                    )}
                     <span className="text-secondary hover:text-secondary/90 mt-4 inline-flex items-center gap-1 text-sm font-semibold transition-colors">
                       Learn More
                       <ArrowRight className="h-4 w-4" />

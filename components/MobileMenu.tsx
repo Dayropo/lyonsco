@@ -50,6 +50,10 @@ const capabilities: readonly CapabilityItem[] = [
     title: "Stereolithography (SLA)",
     href: "/capabilities/stereolithography",
   },
+  {
+    title: "Deep Draw Stamping",
+    href: "/capabilities/deep-draw-stamping",
+  },
 ]
 
 const industries: readonly IndustryItem[] = [
@@ -121,7 +125,7 @@ export function MobileMenu({ navItems }: MobileMenuProps): ReactElement {
                       >
                         {item.label}
                         <ChevronDown
-                          className={`h-5 w-5 transition-transform ${capabilitiesOpen ? "rotate-180" : ""}`}
+                          className={`h-5 w-5 cursor-pointer transition-transform ${capabilitiesOpen ? "rotate-180" : ""}`}
                         />
                       </button>
                       {capabilitiesOpen && (
@@ -156,7 +160,7 @@ export function MobileMenu({ navItems }: MobileMenuProps): ReactElement {
                       >
                         {item.label}
                         <ChevronDown
-                          className={`h-5 w-5 transition-transform ${industriesOpen ? "rotate-180" : ""}`}
+                          className={`h-5 w-5 cursor-pointer transition-transform ${industriesOpen ? "rotate-180" : ""}`}
                         />
                       </button>
                       {industriesOpen && (

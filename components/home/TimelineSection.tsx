@@ -158,11 +158,11 @@ export function TimelineSection(): JSX.Element {
         >
           <div className="relative">
             <div className="bg-border/60 pointer-events-none absolute inset-x-4 top-9 hidden h-px md:block" />
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4">
+            <div className="flex flex-wrap justify-center gap-6">
               {stages.map((stage, index) => (
                 <motion.div
                   key={stage.id}
-                  className="bg-background/80 relative flex h-full flex-col rounded-xl border p-6 text-left shadow-sm"
+                  className="bg-background/80 relative flex w-full sm:w-[calc(50%-12px)] md:w-[calc(33.333333%-16px)] lg:w-[calc(25%-18px)] flex-col rounded-xl border p-6 text-left shadow-sm"
                   variants={itemVariants}
                 >
                   <div className="mt-4 flex items-start gap-3">

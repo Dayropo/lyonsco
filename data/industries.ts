@@ -232,6 +232,38 @@ export const industries: Industry[] = [
           "Streamlined, impact-resistant covers that reduce drag and shield landing gear assemblies.",
       },
     ],
+    components: [
+      {
+        id: "aerospace-machined",
+        name: "Machined Components",
+        icon: "cog",
+        components: [
+          "Brackets, fittings, and mounts",
+          "Titanium and aluminum structural components",
+          "Threaded assemblies and precision flanges",
+        ],
+      },
+      {
+        id: "aerospace-stamped",
+        name: "Stamped Components",
+        icon: "stamp",
+        components: [
+          "Fuel canisters & hydraulic brackets",
+          "Engine mounts & structural flanges",
+          "Enclosures and housing panels",
+        ],
+      },
+      {
+        id: "aerospace-molded",
+        name: "Injection-Molded Components",
+        icon: "droplet",
+        components: [
+          "Interior clips & cable management panels",
+          "Electrical housings & connector covers",
+          "Lightweight custom panels & fasteners",
+        ],
+      },
+    ],
   },
   {
     id: "electronics",

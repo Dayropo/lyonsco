@@ -49,5 +49,6 @@ export function generateStaticParams() {
     { slug: "urethane-silicone-casting" },
     { slug: "stereolithography" },
     // { slug: "prototype-machining" },
+    { slug: "deep-draw-stamping" },
   ]
 }

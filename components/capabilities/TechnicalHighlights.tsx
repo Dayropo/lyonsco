@@ -55,16 +55,16 @@ export function TechnicalHighlights({ specs }: TechnicalHighlightsProps): JSX.El
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          <h2 className="text-foreground text-3xl font-bold tracking-tight sm:text-4xl">
             Technical Highlights
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+          <p className="text-muted-foreground mx-auto mt-4 max-w-2xl text-lg">
             Key specifications and capabilities
           </p>
         </motion.div>
 
         <motion.div
-          className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4"
+          className="mt-16 flex flex-wrap justify-center gap-8"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -76,16 +76,16 @@ export function TechnicalHighlights({ specs }: TechnicalHighlightsProps): JSX.El
               <motion.div
                 key={index}
                 variants={cardVariants}
-                className="rounded-xl border border-border bg-card p-6 text-center shadow-sm"
+                className="border-border bg-card w-full sm:w-[calc(50%-16px)] lg:w-[calc(25%-24px)] rounded-xl border p-6 text-center shadow-sm"
               >
-                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-lg bg-secondary/10 text-secondary">
+                <div className="bg-secondary/10 text-secondary mx-auto flex h-14 w-14 items-center justify-center rounded-lg">
                   <Icon className="h-7 w-7" />
                 </div>
-                <p className="mt-4 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+                <p className="text-muted-foreground mt-4 text-sm font-semibold tracking-wider uppercase">
                   {spec.label}
                 </p>
-                <p className="mt-2 text-2xl font-bold text-foreground">{spec.value}</p>
-                <p className="mt-2 text-sm text-muted-foreground">{spec.description}</p>
+                <p className="text-foreground mt-2 text-2xl font-bold">{spec.value}</p>
+                <p className="text-muted-foreground mt-2 text-sm">{spec.description}</p>
               </motion.div>
             )
           })}
