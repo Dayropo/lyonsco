@@ -15,8 +15,7 @@ export const companies: Company[] = [
     about:
       "Paradigm Development Group (Pardev) provides comprehensive early-stage product development and prototyping services designed to accelerate innovation. Specializing in rapid prototyping, 3D printing, and concept model fabrication, Pardev transforms ideas into functional, test-ready components with speed and precision. The company’s in-house engineering, model-making, and machining capabilities allow seamless support from concept through low-volume production. By combining technical expertise with hands-on collaboration, Pardev helps customers reduce development time, refine designs, and move confidently toward full-scale manufacturing.",
     logo: "/images/companies/pardev-logo.webp",
-    heroImage:
-      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=2400&q=80",
+    heroImage: "/images/companies/pardev-hero.webp",
     specialties: [
       "Rapid Prototyping",
       "3D Printing (FDM, SLA, SLS)",
@@ -115,8 +114,7 @@ export const companies: Company[] = [
     about:
       "PTI Engineered Plastics, located in Macomb, Michigan, is a leading full-service injection molding and tooling company specializing in custom plastic components for the medical, defense, automotive, and industrial markets. With in-house design, engineering, and tool-building capabilities, PTI provides complete product development support from prototype through production. The company offers precision injection molding—including cleanroom manufacturing, insert molding, and rapid prototyping—along with advanced assembly, decorating, and finishing services. As an ISO 13485 and ISO 9001 certified, FDA-registered facility, PTI is recognized for its focus on quality, innovation, and speed-to-market for complex, highly regulated applications.",
     logo: "/images/companies/pti-logo.webp",
-    heroImage:
-      "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?auto=format&fit=crop&w=2400&q=80",
+    heroImage: "/images/companies/pti-hero.webp",
     specialties: [
       "Low Volume Manufacturing",
       "High Volume Manufacturing",
@@ -297,8 +295,7 @@ export const companies: Company[] = [
       },
     ],
     logo: "/images/companies/cgr-logo.webp",
-    heroImage:
-      "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=2400&q=80",
+    heroImage: "/images/companies/cgr-hero.webp",
     specialties: [
       "Tough Parts and Materials",
       "Precision CNC Machining",
@@ -559,8 +556,7 @@ export const companies: Company[] = [
       },
     ],
     logo: "/images/companies/minic-logo.webp",
-    heroImage:
-      "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?auto=format&fit=crop&w=2400&q=80",
+    heroImage: "/images/companies/minic-hero.webp",
     specialties: ["Swiss-Style Turning", "Micro-Machining", "High-Volume Small Parts"],
     capabilities: ["swiss-machining", "micro-machining", "thread-rolling"],
     industries: ["medical-devices", "aerospace-defense", "consumer-electronics", "automotive"],
@@ -664,8 +660,7 @@ export const companies: Company[] = [
       },
     ],
     logo: "/images/companies/carby-logo.webp",
-    heroImage:
-      "https://images.unsplash.com/photo-1759159091728-e2c87b9d9315?auto=format&fit=crop&w=2400&q=80",
+    heroImage: "/images/companies/carby-hero.webp",
     capabilities: [],
     specialties: [
       "Deep Draw and Progressive Metal Stamping",

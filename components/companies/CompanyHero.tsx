@@ -20,9 +20,9 @@ export function CompanyHero({ name, tagline, description, heroImage, logo }: Com
     <section className="relative overflow-hidden -mt-[68px] pt-[68px] sm:-mt-[100px] sm:pt-[100px]">
       <div className="absolute inset-0 z-0">
         <Image src={heroImage} alt={name} fill priority sizes="100vw" className="object-cover" />
-        <div className="from-primary/90 via-primary/75 to-primary/60 absolute inset-0 bg-gradient-to-r" />
+        <div className="from-primary/90 via-primary/75 to-primary/60 absolute inset-0 bg-linear-to-r" />
       </div>
-      <div className="relative z-10 px-6 py-24 sm:py-32">
+      <div className="relative z-10 px-6 py-24">
         <div className="mx-auto max-w-5xl">
           <motion.div
             className="mb-6 inline-block overflow-hidden rounded-xl bg-white p-4 shadow-xl"
