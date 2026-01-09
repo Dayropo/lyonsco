@@ -65,7 +65,7 @@ export function IndustrySolutions({ solutions }: IndustrySolutionsProps): JSX.El
               className="border-border bg-card rounded-lg border p-8 shadow-sm"
             >
               <div className="flex items-start gap-4">
-                <div className="bg-secondary/10 text-secondary flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg">
+                <div className="bg-secondary/10 text-secondary flex h-12 w-12 shrink-0 items-center justify-center rounded-lg">
                   <CheckCircle className="h-6 w-6" />
                 </div>
                 <div className="flex-1">

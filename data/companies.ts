@@ -8,7 +8,7 @@ export const companies: Company[] = [
   {
     id: "pardev",
     slug: "pardev",
-    name: "Pardev",
+    name: "Paradigm Development Group",
     tagline: "Early-Stage Prototyping & Concept Models",
     description:
       "Pardev specializes in rapid prototyping and concept development, helping you bring ideas to life quickly. From initial concept models to functional prototypes, they provide the foundation for successful product development",
@@ -107,7 +107,7 @@ export const companies: Company[] = [
   {
     id: "pti",
     slug: "pti",
-    name: "PTI",
+    name: "PTI Engineered Plastics",
     tagline: "Prototype & Low-to-Mid Volume Plastic Injection Molding",
     description:
       "PTI delivers precision plastic injection molding for low to medium volume production runs. With state-of-the-art equipment and decades of experience, they transform your designs into high-quality plastic components.",
@@ -116,12 +116,12 @@ export const companies: Company[] = [
     logo: "/images/companies/pti-logo.webp",
     heroImage: "/images/companies/pti-hero.webp",
     specialties: [
+      "Prototype Injection Molding",
       "Low Volume Manufacturing",
       "High Volume Manufacturing",
       "Contract Manufacturing",
-      "Assembly",
+      "Clean Room Molding and Assembly",
       "Part Decorating",
-      "Automation",
     ],
     capabilities: [
       "injection-molding",
@@ -236,7 +236,7 @@ export const companies: Company[] = [
   {
     id: "cgr-tech",
     slug: "cgr-tech",
-    name: "CGR Tech",
+    name: "CGR Technologies",
     tagline: "Precision stamping and machining for demanding metal components.",
     description:
       "CGR Technologies Inc. – Stamping Group delivers precision metal stampings with high-accuracy parts of virtually any complexity, holding tolerances down to ±0.0005 in and micro-stamping thin-gage and thin-wall metals from 0.001 in to 0.125 in. The team also specializes in close-tolerance machining down to 50 millionths of an inch (0.0013 mm), routinely meeting strict geometric requirements in hardened steels, exotic alloys, titanium, Inconel, and other challenging materials.",

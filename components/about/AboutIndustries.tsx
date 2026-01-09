@@ -89,7 +89,7 @@ export function AboutIndustries(): JSX.Element {
                   href={industry.href}
                   className="border-border bg-card hover:border-secondary/50 group flex items-center gap-4 rounded-lg border p-6 shadow-sm transition-all hover:shadow-md"
                 >
-                  <div className="bg-secondary/10 text-secondary flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg">
+                  <div className="bg-secondary/10 text-secondary flex h-12 w-12 shrink-0 items-center justify-center rounded-lg">
                     <Building2 className="h-6 w-6" />
                   </div>
                   <div className="flex-1">

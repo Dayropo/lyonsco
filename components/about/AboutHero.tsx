@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
  */
 export function AboutHero(): JSX.Element {
   return (
-    <section className="from-primary to-accent relative -mt-[68px] min-h-[60vh] overflow-hidden bg-gradient-to-br pt-[68px] sm:-mt-[100px] sm:pt-[100px]">
+    <section className="from-primary to-accent relative -mt-[68px] min-h-[60vh] overflow-hidden bg-linear-to-br pt-[68px] sm:-mt-[100px] sm:pt-[100px]">
       <div className="relative z-10 flex min-h-[60vh] items-center px-6 py-32 sm:py-40">
         <div className="mx-auto max-w-5xl text-center">
           <motion.h1

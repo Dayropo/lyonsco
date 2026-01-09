@@ -10,7 +10,7 @@ import { Mail, ArrowRight } from "lucide-react"
  */
 export function AboutCTA(): JSX.Element {
   return (
-    <section className="from-primary to-accent relative overflow-hidden bg-gradient-to-br px-6 py-20 sm:py-28">
+    <section className="from-primary to-accent relative overflow-hidden bg-linear-to-br px-6 py-20 sm:py-28">
       <div className="relative z-10 mx-auto max-w-4xl text-center">
         <motion.h2
           className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl"

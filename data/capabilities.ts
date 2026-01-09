@@ -42,8 +42,8 @@ export const capabilities: Record<string, any> = {
     technicalSpecs: [
       {
         icon: "ruler",
-        label: "Clamping Force",
-        value: "12-650 Tons",
+        label: "Tonnage",
+        value: "35-300 Tons",
         description: "Wide range of press sizes for various part requirements",
       },
       {
@@ -59,9 +59,9 @@ export const capabilities: Record<string, any> = {
         description: "Standard, insert, two-shot, cleanroom, micro, and overmolding",
       },
       {
-        icon: "clock",
-        label: "P3 Advantage",
-        value: "Faster TTM",
+        icon: "rocket",
+        label: "Prototype Molding",
+        value: "Rapid Market Entry",
         description: "Same tool for prototype and production reduces time to market",
       },
     ],
@@ -397,8 +397,8 @@ export const capabilities: Record<string, any> = {
       {
         icon: "layers",
         label: "Processes",
-        value: "4 Types",
-        description: "CNC Swiss Turning, CAM Swiss Automatic Lathes, CNC Milling, and Cold Heading",
+        value: "Multiple Types",
+        description: "CNC Swiss Turning, CAM Swiss Automatic Lathes, CNC Milling, Cold Heading",
       },
       {
         icon: "clock",
@@ -414,9 +414,9 @@ export const capabilities: Record<string, any> = {
         description: "Precision machining for prototypes and production",
       },
       {
-        title: "Urethane Casting",
-        href: "/capabilities/urethane-silicone-casting",
-        description: "Low-volume production and prototyping",
+        title: "Deep Draw Stamping",
+        href: "/capabilities/deep-draw-stamping",
+        description: "Complex formed components with superior structural integrity",
       },
       {
         title: "Injection Molding",

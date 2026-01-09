@@ -147,7 +147,7 @@ export function AboutCapabilities(): JSX.Element {
             {capabilities.map(capability => (
               <motion.div key={capability.id} variants={itemVariants}>
                 <div className="border-border bg-card group flex items-start gap-4 rounded-lg border p-6 shadow-sm transition-all">
-                  <div className="bg-secondary/10 text-secondary flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg">
+                  <div className="bg-secondary/10 text-secondary flex h-12 w-12 shrink-0 items-center justify-center rounded-lg">
                     {(() => {
                       const Icon = capability.icon ?? Cog
                       return <Icon className="h-6 w-6" />

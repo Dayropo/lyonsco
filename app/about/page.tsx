@@ -4,6 +4,7 @@ import {
   AboutCapabilities,
   AboutIndustries,
   AboutCTA,
+  AboutProcesses,
 } from "@/components/about"
 
 /**
@@ -15,6 +16,7 @@ export default function AboutPage() {
       <AboutHero />
       <AboutStory />
       <AboutCapabilities />
+      <AboutProcesses />
       <AboutIndustries />
       <AboutCTA />
     </main>

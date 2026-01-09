@@ -3,7 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { Mail, Phone, ArrowRight } from "lucide-react"
+import { Mail, Phone, ArrowRight, ChevronDown } from "lucide-react"
 import {
   SITE_TAGLINE,
   CONTACT_EMAIL,
@@ -51,6 +51,7 @@ export function HeroSection() {
         />
         <div className="from-primary/90 via-primary/75 to-primary/45 absolute inset-0 bg-linear-to-r" />
       </div>
+
       <div className="relative z-10 flex min-h-[inherit] items-center px-6 py-24 sm:py-32">
         <motion.div
           className="mx-auto max-w-5xl text-center"
@@ -90,6 +91,22 @@ export function HeroSection() {
             </Link>
           </motion.div>
         </motion.div>
+
+        {/* Scroll indicator */}
+        <Link
+          href="/#timeline"
+          aria-label="Scroll to lifecycle"
+          className="group absolute bottom-6 left-1/2 -translate-x-1/2"
+        >
+          <motion.div
+            initial={{ y: 0, opacity: 0.8 }}
+            animate={{ y: [0, 6, 0], opacity: [0.8, 1, 0.8] }}
+            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+            className="bg-primary group-hover:bg-primary/90 flex h-12 w-12 items-center justify-center rounded-full text-white backdrop-blur-sm transition"
+          >
+            <ChevronDown className="h-6 w-6" />
+          </motion.div>
+        </Link>
       </div>
     </section>
   )

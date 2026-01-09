@@ -123,7 +123,7 @@ const itemVariants = {
  */
 export function TimelineSection(): JSX.Element {
   return (
-    <section className="bg-muted px-6 py-20 sm:py-28">
+    <section id="timeline" className="bg-muted scroll-mt-[102px] px-6 py-20 sm:py-28">
       <div className="mx-auto max-w-7xl">
         <motion.div
           className="text-center"
