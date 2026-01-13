@@ -94,9 +94,9 @@ export default async function IndustryPage({ params }: { params: Promise<{ slug:
         description={industry.description}
         heroImage={industry.heroImage}
       />
-      {industry.whatWeOffer.length > 0 && (
-        <IndustryWhatWeOffer whatWeOffer={capabilities} />
-      )}
+
+      <IndustryWhatWeOffer whatWeOffer={capabilities} />
+
       {/* <IndustryProcess processes={LIFECYCLE_STEPS} /> */}
       {industry.components && industry.components.length > 0 && (
         <IndustryComponents components={industry.components} />

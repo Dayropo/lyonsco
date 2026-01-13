@@ -11,7 +11,7 @@ export const companies: Company[] = [
     name: "Paradigm Development Group",
     tagline: "Early-Stage Prototyping & Concept Models",
     description:
-      "Pardev specializes in rapid prototyping and concept development, helping you bring ideas to life quickly. From initial concept models to functional prototypes, they provide the foundation for successful product development",
+      "Paradigm Development Group (Pardev) specializes in rapid prototyping and concept development, helping you bring ideas to life quickly. From initial concept models to functional prototypes, they provide the foundation for successful product development",
     about:
       "Paradigm Development Group (Pardev) provides comprehensive early-stage product development and prototyping services designed to accelerate innovation. Specializing in rapid prototyping, 3D printing, and concept model fabrication, Pardev transforms ideas into functional, test-ready components with speed and precision. The company’s in-house engineering, model-making, and machining capabilities allow seamless support from concept through low-volume production. By combining technical expertise with hands-on collaboration, Pardev helps customers reduce development time, refine designs, and move confidently toward full-scale manufacturing.",
     logo: "/images/companies/pardev-logo.webp",
@@ -23,7 +23,7 @@ export const companies: Company[] = [
       "Urethane Castings",
     ],
     capabilities: ["additive-manufacturing", "cnc-prototyping"],
-    industries: ["medical-devices", "consumer-electronics", "automotive", "aerospace-defense"],
+    industries: ["medical", "electronics", "automotive", "aerospace"],
     certifications: [
       {
         id: "iso-9001",
@@ -129,7 +129,7 @@ export const companies: Company[] = [
       "cleanroom-production",
       "value-added-assembly",
     ],
-    industries: ["medical-devices", "consumer-electronics", "automotive", "aerospace-defense"],
+    industries: ["medical", "electronics", "automotive", "aerospace"],
     certifications: [
       {
         id: "iso-9001",
@@ -181,9 +181,9 @@ export const companies: Company[] = [
           "Small batch production",
         ],
         specifications: {
-          "Lead Time": "3-5 days",
-          "Batch Size": "10-100 units",
-          Tolerance: "±0.002 in",
+          "Time to Market": "Average 3-5 weeks",
+          "Part Runs": "Prototype to Large Volume",
+          // Tolerance: "±0.002 in",
         },
       },
       {
@@ -310,7 +310,7 @@ export const companies: Company[] = [
       "multi-axis-machining",
       "cleanroom-manufacturing",
     ],
-    industries: ["medical-devices", "aerospace-defense", "automotive"],
+    industries: ["medical", "aerospace", "automotive"],
     certifications: [
       {
         id: "iso-9001",
@@ -559,7 +559,7 @@ export const companies: Company[] = [
     heroImage: "/images/companies/minic-hero.webp",
     specialties: ["Swiss-Style Turning", "Micro-Machining", "High-Volume Small Parts"],
     capabilities: ["swiss-machining", "micro-machining", "thread-rolling"],
-    industries: ["medical-devices", "aerospace-defense", "consumer-electronics", "automotive"],
+    industries: ["medical", "aerospace", "electronics", "automotive"],
     certifications: [
       {
         id: "iso-9001",
@@ -670,7 +670,7 @@ export const companies: Company[] = [
       "Medical, Automotive, Aerospace, Industrial, and Electronics Markets",
       "Quality, Consistency, and Repeatable Results",
     ],
-    industries: ["automotive", "medical-devices", "aerospace-defense", "consumer-electronics"],
+    industries: ["automotive", "medical", "aerospace", "electronics"],
     certifications: [
       {
         id: "iso-9001",

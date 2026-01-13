@@ -12,9 +12,9 @@ const industries = [
     href: "/industries/automotive",
   },
   {
-    id: "aviation",
-    name: "Aviation",
-    href: "/industries/aviation",
+    id: "aerospace",
+    name: "Aerospace",
+    href: "/industries/aerospace",
   },
   {
     id: "electronics",
@@ -28,7 +28,7 @@ const industries = [
   },
   {
     id: "military",
-    name: "Military and defense",
+    name: "Military",
     href: "/industries/military",
   },
 ]

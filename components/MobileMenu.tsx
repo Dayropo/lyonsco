@@ -62,8 +62,8 @@ const industries: readonly IndustryItem[] = [
     href: "/industries/automotive",
   },
   {
-    title: "Aviation",
-    href: "/industries/aviation",
+    title: "Aerospace",
+    href: "/industries/aerospace",
   },
   {
     title: "Electronics",

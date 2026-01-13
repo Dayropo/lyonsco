@@ -11,9 +11,9 @@ interface CompanyIndustriesProps {
 
 const industryMap: Record<string, { name: string; icon: typeof Car; slug: string }> = {
   automotive: { name: "Automotive", icon: Car, slug: "automotive" },
-  "aerospace-defense": { name: "Aerospace & Defense", icon: Plane, slug: "aerospace-defense" },
-  "consumer-electronics": { name: "Consumer Electronics", icon: Zap, slug: "consumer-electronics" },
-  "medical-devices": { name: "Medical Devices", icon: Heart, slug: "medical-devices" },
+  aerospace: { name: "Aerospace", icon: Plane, slug: "aerospace" },
+  electronics: { name: "Electronics", icon: Zap, slug: "electronics" },
+  medical: { name: "Medical", icon: Heart, slug: "medical" },
   military: { name: "Military", icon: Shield, slug: "military" },
 }
 
@@ -61,7 +61,7 @@ export function CompanyIndustries({ industries }: CompanyIndustriesProps): JSX.E
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          {industries.map((industryId) => {
+          {industries.map(industryId => {
             const industry = industryMap[industryId]
             if (!industry) return null
             const Icon = industry.icon

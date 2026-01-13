@@ -70,4 +70,4 @@ export interface ProjectStage {
   duration: string
 }
 
-export type IndustrySlug = "automotive" | "aviation" | "electronics" | "medical" | "military"
+export type IndustrySlug = "automotive" | "aerospace" | "electronics" | "medical" | "military"
