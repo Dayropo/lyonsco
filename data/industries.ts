@@ -475,9 +475,9 @@ export const industries: Industry[] = [
     ],
   },
   {
-    id: "military",
-    slug: "military",
-    name: "Military",
+    id: "defense",
+    slug: "defense",
+    name: "Defense",
     description:
       "Our team delivers mission-ready injection-molded, machined, and stamped components with the durability and reliability required in defense environments. We support defense programs with precision components engineered for extreme conditions and consistent mission-critical performance.",
     // heroImage:
@@ -485,25 +485,25 @@ export const industries: Industry[] = [
     heroImage: "/images/industries/military.jpg",
     whatWeOffer: [
       {
-        id: "military-custom",
+        id: "defense-custom",
         name: "Custom Design & Engineering",
         description:
           "We build parts to your exact specifications, from concept to finished product, with fast turnaround and full technical support.",
       },
       {
-        id: "military-materials",
+        id: "defense-materials",
         name: "Advanced Materials",
         description:
           "High-performance plastics such as PEEK, Ultem and glass-filled nylons deliver exceptional strength-to-weight ratios, ideal for improving mobility, fuel efficiency and overall system performance.",
       },
       {
-        id: "military-precision",
+        id: "defense-precision",
         name: "Precision & Repeatability",
         description:
           "Our molding process ensures tight tolerances and consistent results—vital for components used in defense, aviation and tactical systems.",
       },
       {
-        id: "military-complex",
+        id: "defense-complex",
         name: "Complex Geometries",
         description:
           "Injection molding enables intricate shapes and the consolidation of multiple elements into a single part, reducing weight, weak points and assembly time.",
@@ -512,29 +512,29 @@ export const industries: Industry[] = [
     processes: [],
     applications: [
       {
-        id: "military-aerospace",
+        id: "defense-aerospace",
         description: "Aerospace and aircraft components",
       },
       {
-        id: "military-electronics",
+        id: "defense-electronics",
         description: "Military electronics housings",
       },
       {
-        id: "military-structural",
+        id: "defense-structural",
         description: "Structural, load-bearing and support elements",
       },
       {
-        id: "military-protective",
+        id: "defense-protective",
         description: "Lightweight protective parts and covers",
       },
       {
-        id: "military-connectors",
+        id: "defense-connectors",
         description: "High-strength connectors, brackets and mounts",
       },
     ],
     components: [
       {
-        id: "military-machined",
+        id: "defense-machined",
         name: "Machined Components",
         icon: "cog",
         components: [
@@ -548,7 +548,7 @@ export const industries: Industry[] = [
         ],
       },
       {
-        id: "military-stamped",
+        id: "defense-stamped",
         name: "Stamped Components",
         icon: "stamp",
         components: [
@@ -561,7 +561,7 @@ export const industries: Industry[] = [
         ],
       },
       {
-        id: "military-molded",
+        id: "defense-molded",
         name: "Injection-Molded Components",
         icon: "droplet",
         components: [

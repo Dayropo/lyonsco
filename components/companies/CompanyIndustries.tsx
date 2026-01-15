@@ -14,7 +14,7 @@ const industryMap: Record<string, { name: string; icon: typeof Car; slug: string
   aerospace: { name: "Aerospace", icon: Plane, slug: "aerospace" },
   electronics: { name: "Electronics", icon: Zap, slug: "electronics" },
   medical: { name: "Medical", icon: Heart, slug: "medical" },
-  military: { name: "Military", icon: Shield, slug: "military" },
+  defense: { name: "Defense", icon: Shield, slug: "defense" },
 }
 
 const containerVariants = {

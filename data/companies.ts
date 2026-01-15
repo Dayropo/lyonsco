@@ -23,7 +23,7 @@ export const companies: Company[] = [
       "Urethane Castings",
     ],
     capabilities: ["additive-manufacturing", "cnc-prototyping"],
-    industries: ["medical", "electronics", "automotive", "aerospace"],
+    industries: ["medical", "aerospace", "automotive"],
     certifications: [
       {
         id: "iso-9001",
@@ -129,7 +129,7 @@ export const companies: Company[] = [
       "cleanroom-production",
       "value-added-assembly",
     ],
-    industries: ["medical", "electronics", "automotive", "aerospace"],
+    industries: ["medical", "aerospace", "automotive"],
     certifications: [
       {
         id: "iso-9001",
@@ -559,7 +559,7 @@ export const companies: Company[] = [
     heroImage: "/images/companies/minic-hero.webp",
     specialties: ["Swiss-Style Turning", "Micro-Machining", "High-Volume Small Parts"],
     capabilities: ["swiss-machining", "micro-machining", "thread-rolling"],
-    industries: ["medical", "aerospace", "electronics", "automotive"],
+    industries: ["medical", "aerospace", "automotive"],
     certifications: [
       {
         id: "iso-9001",
@@ -670,7 +670,7 @@ export const companies: Company[] = [
       "Medical, Automotive, Aerospace, Industrial, and Electronics Markets",
       "Quality, Consistency, and Repeatable Results",
     ],
-    industries: ["automotive", "medical", "aerospace", "electronics"],
+    industries: ["medical", "aerospace", "automotive"],
     certifications: [
       {
         id: "iso-9001",

@@ -155,7 +155,7 @@ export function RFQForm(): JSX.Element {
                     <option value="aerospace">Aerospace</option>
                     <option value="electronics">Electronics</option>
                     <option value="medical">Medical</option>
-                    <option value="military">Military and Defense</option>
+                    <option value="defense">Defense</option>
                     <option value="other">Other</option>
                   </select>
                 </div>

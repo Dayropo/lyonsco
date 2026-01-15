@@ -74,8 +74,8 @@ const industries: readonly IndustryItem[] = [
     href: "/industries/medical",
   },
   {
-    title: "Military",
-    href: "/industries/military",
+    title: "Defense",
+    href: "/industries/defense",
   },
 ]
 

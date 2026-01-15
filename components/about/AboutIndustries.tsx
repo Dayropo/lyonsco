@@ -27,9 +27,9 @@ const industries = [
     href: "/industries/medical",
   },
   {
-    id: "military",
-    name: "Military",
-    href: "/industries/military",
+    id: "defense",
+    name: "Defense",
+    href: "/industries/defense",
   },
 ]
 

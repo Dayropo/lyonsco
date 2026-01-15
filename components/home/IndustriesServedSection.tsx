@@ -43,11 +43,11 @@ const industries: Industry[] = [
     slug: "medical",
   },
   {
-    id: "military",
-    name: "Military",
+    id: "defense",
+    name: "Defense",
     description: "Ruggedized parts for defense applications",
     icon: <Shield className="h-8 w-8" />,
-    slug: "military",
+    slug: "defense",
   },
 ]
 
